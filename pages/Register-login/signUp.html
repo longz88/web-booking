@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Web-booking</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700;800&display=swap"
+         rel="stylesheet"
+      />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      />
+
+      <link rel="stylesheet" href="/css/Register-login__css/signUp.css" />
+   </head>
+   <body>
+      <div class="app">
+         <div class="container">
+            <div class="slider">
+               <div class="list">
+                  <div class="item">
+                     <img src="/font/img-fly.jpg" alt="" />
+                  </div>
+
+                  <div class="item">
+                     <img src="/font/img-stay.jpg" alt="" />
+                  </div>
+               </div>
+
+               <ul class="dots">
+                  <li class="active"></li>
+                  <li></li>
+               </ul>
+            </div>
+
+            <div class="content">
+               <div class="header">
+                  <a href="/" class="return">
+                     <i class="fa-solid fa-angle-left"></i>
+
+                     <p>Back</p>
+                  </a>
+
+                  <a href="/">
+                     <img src="/font/Logo.svg" alt="" />
+                  </a>
+               </div>
+
+               <h1 class="heading">Sign up</h1>
+               <p class="title">
+                  Let’s get you all st up so you can access your personal
+                  account.
+               </p>
+
+               <form class="form" method="post">
+                  <div class="form-info">
+                     <div class="form-group">
+                        <label for="name">Name</label>
+                        <input
+                           type="text"
+                           id="name"
+                           name="name"
+                           placeholder="john.doe@gmail.com"
+                           autofocus
+                        />
+                     </div>
+
+                     <div class="form-group">
+                        <label for="number">Phone Number</label>
+                        <input
+                           type="number"
+                           id="number"
+                           name="phoneNumber"
+                           placeholder="john.doe@gmail.com"
+                        />
+                     </div>
+                  </div>
+
+                  <div class="form-group">
+                     <label for="email">Email</label>
+                     <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="john.doe@gmail.com"
+                     />
+                  </div>
+
+                  <div class="form-group">
+                     <label for="password">Password</label>
+                     <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="password > 6 characters"
+                     />
+                     <div class="toggle-password">
+                        <i class="fa-solid fa-eye toggle-password-icon"></i>
+                     </div>
+                  </div>
+
+                  <div class="forgot-password">
+                     <div class="remember">
+                        <input type="checkbox" name="check-box" id="" />
+                        <p>
+                           I agree to all the <a href="#">Terms</a> and
+                           <a href="#">Privacy Policies</a>
+                        </p>
+                     </div>
+                  </div>
+
+                  <button type="submit" class="btn-signUp zoom">
+                     <a href="/pages/user/user.html"> Create account </a>
+                  </button>
+               </form>
+
+               <p class="create-acc">
+                  Already have an account?<a
+                     href="/pages/Register-login/login.html"
+                  >
+                     Login</a
+                  >
+               </p>
+
+               <p class="title-social">Or login with</p>
+
+               <div class="socials">
+                  <div class="social-item">
+                     <img src="/font/face.svg" alt="" />
+                  </div>
+                  <div class="social-item">
+                     <img src="/font/icons_google.svg" alt="" />
+                  </div>
+                  <div class="social-item">
+                     <img src="/font/apple.svg" alt="" />
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <script src="/js/Register-login__js/signUp.js"></script>
+   </body>
+</html>

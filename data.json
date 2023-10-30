@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "name": "Chu Thành Long",
+      "phoneNumber": "0763325145",
+      "email": "longquangthuy307@gmail.com",
+      "password": "1234567",
+      "id": 2
+    },
+    {
+      "name": "Chu Thành Long",
+      "phoneNumber": "0763325145",
+      "email": "chuthanhlong2k2@gmail.com",
+      "password": "1234567",
+      "remember": true,
+      "id": 3
+    }
+  ]
+}
