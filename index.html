@@ -4,6 +4,11 @@
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Web-booking</title>
+      <link
+         rel="shortcut icon"
+         type="image/png"
+         href="/font/logo-web-2-removebg-preview.png"
+      />
 
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,7 +31,7 @@
                <a href="/">
                   <img
                      class="header__logo--img"
-                     src="./font/Logo.svg"
+                     src="/font/logo-main-5-removebg-preview.png"
                      alt="logo"
                   />
                </a>
@@ -34,27 +39,101 @@
 
             <div class="header__menu">
                <div class="header__find">
-                  <a href="#" class="header__find--item">
+                  <a
+                     href="/pages/flight-flow/flight.html"
+                     class="header__find--item"
+                  >
                      <i class="fa-solid fa-plane"></i>
-                     <p>Find Flight</p>
+                     <p>Chuyến bay</p>
                   </a>
-                  <a href="#" class="header__find--item">
+                  <a
+                     href="/pages/hotel-flow/hotel.html"
+                     class="header__find--item"
+                  >
                      <i class="fa-solid fa-bed"></i>
-                     <p>Find Stays</p>
+                     <p>Khách sạn</p>
                   </a>
                </div>
 
-               <div class="header__register">
-                  <a
-                     href="/pages/Register-login/login.html"
-                     class="header__login"
-                     >Login</a
-                  >
-                  <a
-                     href="/pages/Register-login/signUp.html"
-                     class="header__sign-up zoom"
-                     >Sign Up</a
-                  >
+               <div class="header__register--wrapper show">
+                  <div class="header__register">
+                     <a
+                        href="/pages/Register-login/login.html"
+                        class="header__login"
+                        >Đăng nhập</a
+                     >
+                     <a
+                        href="/pages/Register-login/signUp.html"
+                        class="header__sign-up zoom"
+                        >Đăng ký</a
+                     >
+                  </div>
+               </div>
+
+               <div class="header__user--wrapper">
+                  <div class="header__user">
+                     <a href="#" class="header__favorite">
+                        <i class="fa-solid fa-heart"></i>
+                        <p>Yêu thích</p>
+                     </a>
+
+                     <div class="header__user--container">
+                        <div class="header__avatar">
+                           <img
+                              src="https://vapa.vn/wp-content/uploads/2022/12/anh-den-ngau.jpeg"
+                              alt=""
+                           />
+                           <div class="header__avatar--name">
+                              John danati jus
+                           </div>
+                        </div>
+
+                        <div class="header__user--title">
+                           <div class="header__user--title-list">
+                              <div class="header__user--acc">
+                                 <a
+                                    href="/pages/user/user.html"
+                                    class="header__user--title-item zoom"
+                                 >
+                                    <i class="fa-solid fa-user"></i>
+                                    <p>Tài khoản</p>
+                                    <i class="fa-solid fa-angle-right"></i>
+                                 </a>
+
+                                 <a
+                                    href="#"
+                                    class="header__user--title-item zoom"
+                                 >
+                                    <i class="fa-solid fa-gear"></i>
+                                    <p>Cài đặt</p>
+                                    <i class="fa-solid fa-angle-right"></i>
+                                 </a>
+                              </div>
+
+                              <div class="header__user--logout">
+                                 <a
+                                    href="#"
+                                    class="header__user--title-item zoom"
+                                 >
+                                    <i class="fa-solid fa-circle-question"></i>
+                                    <p>Trợ giúp</p>
+                                    <i class="fa-solid fa-angle-right"></i>
+                                 </a>
+
+                                 <a
+                                    href="#"
+                                    class="header__user--title-item zoom header__user--title-logout"
+                                 >
+                                    <i
+                                       class="fa-solid fa-right-from-bracket"
+                                    ></i>
+                                    <p>Đăng xuất</p>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
                </div>
             </div>
 
@@ -63,67 +142,67 @@
             </div>
          </header>
 
+         <div class="up-to-top">
+            <i class="fa-solid fa-arrow-up up-to-top-icon"></i>
+         </div>
+
          <div class="container">
             <div class="container__header">
                <div class="container__header--content">
-                  <h3 class="container__header--content-top">Helping Others</h3>
-                  <h1 class="container__header--content-mid">Live & Travel</h1>
+                  <h3 class="container__header--content-top">
+                     Giúp đỡ Mọi người
+                  </h3>
+                  <h1 class="container__header--content-mid">
+                     SỐNG VÀ DU LỊCH
+                  </h1>
                   <p class="container__header--content-bot">
-                     Special offers to suit your plan
+                     Ưu đãi đặc biệt phù hợp với kế hoạch của bạn
                   </p>
                </div>
 
                <div class="container__header--select">
                   <div class="container__header--vehicle">
-                     <div class="container__header--vehicle-item">
+                     <div class="container__header--vehicle-item active">
                         <i class="fa-solid fa-plane"></i>
-                        <p>Flight</p>
+                        <p>Chuyến bay</p>
                      </div>
 
-                     <div class="container__header--vehicle-item active">
+                     <div class="container__header--vehicle-item">
                         <i class="fa-solid fa-bed"></i>
-                        <p>Stays</p>
+                        <p>Khách sạn</p>
                      </div>
                   </div>
 
-                  <div class="container__header--form-book">
+                  <div class="container__header--form-book active">
                      <form class="container__header--forms-flight">
                         <div class="container__header--form">
-                           <label for="form-to">From - To</label>
+                           <label for="form-to">Từ - Đến</label>
                            <select
                               name="from-to"
                               id="form-to"
                               class="container__header--form-item"
                            >
-                              <option value="Hà Nội - Nha Trang">
-                                 Hà Nội - Nha Trang
-                              </option>
-                              <option value="Hà Nội - Nha Trang">
-                                 Hà Nội - Nha Trang
-                              </option>
-                              <option value="Hà Nội - Nha Trang">
-                                 Hà Nội - Nha Trang
-                              </option>
-                              <option value="Hà Nội - Nha Trang">
-                                 Hà Nội - Nha Trang
-                              </option>
+                              <option>Hà Nội - Tp Hồ Chí Minh</option>
+                              <option>Đà Nẵng - Đà lạt</option>
+                              <option>Hà Nội - Đà Nẵng</option>
+                              <option>Tp Hồ Chí Minh - Đà Lạt</option>
                            </select>
                         </div>
 
                         <div class="container__header--form">
-                           <label for="trip">Trip</label>
+                           <label for="trip">Chuyến</label>
                            <select
                               name="trip"
                               id="trip"
                               class="container__header--form-item"
                            >
-                              <option value="Return">Return</option>
-                              <option value="Return">Return</option>
+                              <option value="Return">Đi</option>
+                              <option value="Return">Trở lại</option>
                            </select>
                         </div>
 
                         <div class="container__header--form">
-                           <label for="depart-return">Depart- Return</label>
+                           <label for="depart-return">Khởi hành - Trở về</label>
                            <input
                               type="text"
                               id="depart-return"
@@ -133,32 +212,32 @@
                         </div>
 
                         <div class="container__header--form">
-                           <label for="passenger">Passenger - Class</label>
+                           <label for="passenger">Hành khách - Hạng</label>
                            <input
                               type="text"
                               id="passenger"
-                              placeholder="1 Passenger, Economy"
+                              placeholder="1 hành khách, Phổ thông"
                               class="container__header--form-item"
                            />
                         </div>
                      </form>
                   </div>
 
-                  <div class="container__header--form-book active">
+                  <div class="container__header--form-book">
                      <form class="container__header--forms-stay">
                         <div class="container__header--form">
                            <i class="fa-solid fa-bed"></i>
-                           <label for="passenger">Enter Destination</label>
+                           <label for="passenger">Nhập điểm đến</label>
                            <input
                               type="text"
                               id="passenger"
-                              placeholder="1 Passenger, Economy"
+                              placeholder="Tp Hồ Chí Minh"
                               class="container__header--form-item"
                            />
                         </div>
 
                         <div class="container__header--form">
-                           <label for="check-in">Check In</label>
+                           <label for="check-in">Nhận phòng</label>
                            <input
                               type="date"
                               id="check-in"
@@ -167,7 +246,7 @@
                         </div>
 
                         <div class="container__header--form">
-                           <label for="check-out">Check Out</label>
+                           <label for="check-out">Trả phòng</label>
                            <input
                               type="date"
                               id="check-out"
@@ -177,24 +256,15 @@
 
                         <div class="container__header--form">
                            <i class="fa-solid fa-user"></i>
-                           <label for="form-to">Rooms & Guests</label>
+                           <label for="form-to">Phòng và khách hàng</label>
                            <select
                               name="from-to"
                               id="form-to"
                               class="container__header--form-item"
                            >
-                              <option value="Hà Nội - Nha Trang">
-                                 1 room, 2 guests
-                              </option>
-                              <option value="Hà Nội - Nha Trang">
-                                 2 room, 2 guests
-                              </option>
-                              <option value="Hà Nội - Nha Trang">
-                                 3 room, 6 guests
-                              </option>
-                              <option value="Hà Nội - Nha Trang">
-                                 1 room, 1 guests
-                              </option>
+                              <option>1 phòng, 2 khách</option>
+                              <option>2 phòng, 2 khách</option>
+                              <option>3 phòng, 6 khách</option>
                            </select>
                         </div>
                      </form>
@@ -203,22 +273,21 @@
                   <div class="container__header--submit">
                      <button class="btn__add-promo-code">
                         <i class="fa-solid fa-plus"></i>
-                        Add promo code
+                        Thêm Khuyến mãi
                      </button>
 
-                     <button
-                        class="container__header--submit-btn btn-show zoom"
+                     <a
+                        href="/pages/flight-flow/flight.html"
+                        class="container__header--submit-btn active btn-show"
                      >
                         <i class="fa-regular fa-paper-plane"></i>
-                        Show Flights
-                     </button>
+                        Chuyến bay
+                     </a>
 
-                     <button
-                        class="container__header--submit-btn active btn-show zoom"
-                     >
+                     <a href="#" class="container__header--submit-btn btn-show">
                         <i class="fa-solid fa-building"></i>
-                        Show Places
-                     </button>
+                        Khách sạn
+                     </a>
                   </div>
                </div>
             </div>
@@ -227,168 +296,168 @@
                <div class="container__title--header">
                   <div class="container__title--content">
                      <h1 class="container__title--heading">
-                        Plan your perfect trip
+                        Lên kế hoạch cho chuyến đi Hoàn hảo của bạn
                      </h1>
                      <p class="container__title--desc">
-                        Search Flights & Places Hire to our most popular
-                        destinations
+                        Tìm kiếm Chuyến bay và Khách sạn tại các địa điểm tuyệt
+                        vời nhất
                      </p>
                   </div>
                   <button class="container__title--btn btn-see">
-                     See more places
+                     Xem thêm địa điểm
                   </button>
                </div>
 
                <div class="container__plan--cards">
                   <div class="container__plan--card zoom">
                      <img
-                        src="./font/plan-img.jpg"
+                        src="https://media-cdn-v2.laodong.vn/storage/newsportal/2023/8/26/1233704/2-69.jpg"
                         alt=""
                         class="container__plan--img"
                      />
 
                      <div class="container__plan--card-content">
                         <p class="container__plan--card-heading">
-                           Istanbul, Turkey
+                           Tp Hồ Chí Minh, Hà Giang
                         </p>
                         <p class="container__plan--card-desc">
-                           Flights . Hotels . Resorts
+                           Chuyến bay . Khách sạn . Resorts
                         </p>
                      </div>
                   </div>
 
                   <div class="container__plan--card zoom">
                      <img
-                        src="./font/plan-img.jpg"
+                        src="https://baolangson.vn/uploads/2023/02/09/trang-an-5882.jpg"
                         alt=""
                         class="container__plan--img"
                      />
 
                      <div class="container__plan--card-content">
                         <p class="container__plan--card-heading">
-                           Istanbul, Turkey
+                           Tp Hồ Chí Minh, Ninh Bình
                         </p>
                         <p class="container__plan--card-desc">
-                           Flights . Hotels . Resorts
+                           Chuyến bay . Khách sạn . Resorts
                         </p>
                      </div>
                   </div>
 
                   <div class="container__plan--card zoom">
                      <img
-                        src="./font/plan-img.jpg"
+                        src="https://ik.imagekit.io/tvlk/blog/2023/02/du-lich-phu-quoc-thang-10-1.jpg?tr=dpr-2,w-675"
                         alt=""
                         class="container__plan--img"
                      />
 
                      <div class="container__plan--card-content">
                         <p class="container__plan--card-heading">
-                           Istanbul, Turkey
+                           Tp Hồ Chí Minh, Phú Quốc
                         </p>
                         <p class="container__plan--card-desc">
-                           Flights . Hotels . Resorts
+                           Chuyến bay . Khách sạn . Resorts
                         </p>
                      </div>
                   </div>
 
                   <div class="container__plan--card zoom">
                      <img
-                        src="./font/plan-img.jpg"
+                        src="https://cdn.tgdd.vn/Files/2021/06/22/1362258/mot-so-kinh-nghiem-du-lich-nha-trang-cuc-bo-ich-ban-nen-biet-202201102016092511.jpeg"
                         alt=""
                         class="container__plan--img"
                      />
 
                      <div class="container__plan--card-content">
                         <p class="container__plan--card-heading">
-                           Istanbul, Turkey
+                           Tp Hồ Chí Minh, Nha Trang
                         </p>
                         <p class="container__plan--card-desc">
-                           Flights . Hotels . Resorts
+                           Chuyến bay . Khách sạn . Resorts
                         </p>
                      </div>
                   </div>
 
                   <div class="container__plan--card zoom">
                      <img
-                        src="./font/plan-img.jpg"
+                        src="https://tour.dulichvietnam.com.vn/uploads/tour/tmp_1659758969.jpg"
                         alt=""
                         class="container__plan--img"
                      />
 
                      <div class="container__plan--card-content">
                         <p class="container__plan--card-heading">
-                           Istanbul, Turkey
+                           Tp Hồ Chí Minh, Phan Thiết
                         </p>
                         <p class="container__plan--card-desc">
-                           Flights . Hotels . Resorts
+                           Chuyến bay . Khách sạn . Resorts
                         </p>
                      </div>
                   </div>
 
                   <div class="container__plan--card zoom">
                      <img
-                        src="./font/plan-img.jpg"
+                        src="https://cdn.tgdd.vn/Files/2021/06/18/1361241/top-10-dia-diem-du-lich-mien-tay-hap-dan-du-khach-202203281004231298.jpg"
                         alt=""
                         class="container__plan--img"
                      />
 
                      <div class="container__plan--card-content">
                         <p class="container__plan--card-heading">
-                           Istanbul, Turkey
+                           Tp Hồ Chí Minh, Miền Tây
                         </p>
                         <p class="container__plan--card-desc">
-                           Flights . Hotels . Resorts
+                           Chuyến bay . Khách sạn . Resorts
                         </p>
                      </div>
                   </div>
 
                   <div class="container__plan--card zoom">
                      <img
-                        src="./font/plan-img.jpg"
+                        src="https://cdn.tgdd.vn/Files/2021/11/06/1396186/cam-nang-du-lich-mien-trung-top-10-dia-diem-khong-the-bo-qua-202202221319038679.jpg"
                         alt=""
                         class="container__plan--img"
                      />
 
                      <div class="container__plan--card-content">
                         <p class="container__plan--card-heading">
-                           Istanbul, Turkey
+                           Tp Hồ Chí Minh, Miền Trung
                         </p>
                         <p class="container__plan--card-desc">
-                           Flights . Hotels . Resorts
+                           Chuyến bay . Khách sạn . Resorts
                         </p>
                      </div>
                   </div>
 
                   <div class="container__plan--card zoom">
                      <img
-                        src="./font/plan-img.jpg"
+                        src="https://wiki-travel.com.vn/Uploads/picture/Thaophuongnguyen-184715114721-1A.jpg"
                         alt=""
                         class="container__plan--img"
                      />
 
                      <div class="container__plan--card-content">
                         <p class="container__plan--card-heading">
-                           Istanbul, Turkey
+                           Tp Hồ Chí Minh, Hà Tiên
                         </p>
                         <p class="container__plan--card-desc">
-                           Flights . Hotels . Resorts
+                           Chuyến bay . Khách sạn . Resorts
                         </p>
                      </div>
                   </div>
 
                   <div class="container__plan--card zoom">
                      <img
-                        src="./font/plan-img.jpg"
+                        src="https://www.baobaclieu.vn/uploads/image/2022/01/26/z2994111501193_d26bbffc2995b0068b7c305360c3abc7.jpg"
                         alt=""
                         class="container__plan--img"
                      />
 
                      <div class="container__plan--card-content">
                         <p class="container__plan--card-heading">
-                           Istanbul, Turkey
+                           Tp Hồ Chí Minh, Bạc Liêu
                         </p>
                         <p class="container__plan--card-desc">
-                           Flights . Hotels . Resorts
+                           Chuyến bay . Khách sạn . Resorts
                         </p>
                      </div>
                   </div>
@@ -402,16 +471,19 @@
                   </div>
 
                   <div class="container__option--content">
-                     <h1 class="container__option--heading">Flights</h1>
+                     <h1 class="container__option--heading">Chuyến bay</h1>
                      <p class="container__option--desc">
-                        Search Flights & Places Hire to our most popular
-                        destinations
+                        Tìm kiếm Chuyến bay và Khách sạn tại các địa điểm tuyệt
+                        vời nhất
                      </p>
 
-                     <button class="btn__option-flight btn-show zoom">
+                     <a
+                        href="/pages/flight-flow/flight.html"
+                        class="btn__option-flight btn-show"
+                     >
                         <i class="fa-regular fa-paper-plane"></i>
-                        Show Flights
-                     </button>
+                        Chuyến bay
+                     </a>
                   </div>
                </div>
 
@@ -421,16 +493,19 @@
                   </div>
 
                   <div class="container__option--content">
-                     <h1 class="container__option--heading">Hotels</h1>
+                     <h1 class="container__option--heading">Khách sạn</h1>
                      <p class="container__option--desc">
-                        Search hotels & Places Hire to our most popular
-                        destinations
+                        Tìm kiếm Chuyến bay và Khách sạn tại các địa điểm tuyệt
+                        vời nhất
                      </p>
 
-                     <button class="btn__option-flight btn-show zoom">
+                     <a
+                        href="/pages/hotel-flow/hotel.html"
+                        class="btn__option-flight btn-show"
+                     >
                         <i class="fa-regular fa-paper-plane"></i>
-                        Show Hotels
-                     </button>
+                        Khách sạn
+                     </a>
                   </div>
                </div>
             </div>
@@ -438,12 +513,14 @@
             <div class="container__review">
                <div class="container__title--header">
                   <div class="container__title--content">
-                     <h1 class="container__title--heading">Reviews</h1>
+                     <h1 class="container__title--heading">Đánh giá</h1>
                      <p class="container__title--desc">
-                        What people says about Golobe facilities
+                        Mọi người nói gì về chất lượng của Golobe
                      </p>
                   </div>
-                  <button class="container__title--btn btn-see">See All</button>
+                  <button class="container__title--btn btn-see">
+                     Xem tất cả
+                  </button>
                </div>
 
                <div class="container__review--slider">
@@ -458,16 +535,16 @@
                   <div class="container__review--list">
                      <div class="container__review--card">
                         <h1 class="container__review--card-heading">
-                           “A real sense of community, nurtured”
+                           “Một ý thức cộng đồng thực sự, được nuôi dưỡng”
                         </h1>
                         <p class="container__review--card-title">
-                           Really appreciate the help and support from the staff
-                           during these tough times. Shoutout to Katie for
-                           helping me always, even when I was out of the
-                           country. And always available when needed.
+                           Thực sự đánh giá cao sự giúp đỡ và hỗ trợ từ các nhân
+                           viên trong thời điểm khó khăn này. Cảm ơn Katie vì đã
+                           luôn giúp đỡ tôi, ngay cả khi tôi ở nước ngoài. Và
+                           luôn có sẵn khi cần thiết.
                         </p>
                         <a href="#" class="container__review--card-view"
-                           >View more</a
+                           >Xem thêm</a
                         >
                         <div class="container__review--card-star">
                            <i class="fa-solid fa-star"></i>
@@ -476,9 +553,9 @@
                            <i class="fa-solid fa-star"></i>
                            <i class="fa-solid fa-star"></i>
                         </div>
-                        <p class="container__review--card-address">Olga</p>
+                        <p class="container__review--card-address">Phú Quốc</p>
                         <p class="container__review--card-desc">
-                           Weave Studios – Kai Tak
+                           Làng chài cổ Hàm Ninh - Dinh Cậu
                         </p>
                         <a href="#" class="container__review--card-gg">
                            <img
@@ -489,7 +566,7 @@
                            <p>Google</p>
                         </a>
                         <img
-                           src="./font/container__review--card-img.jpg"
+                           src="https://ik.imagekit.io/tvlk/blog/2022/12/lang-chai-ham-ninh-2.jpg?tr=dpr-2,w-675"
                            alt=""
                            class="container__review--card-img"
                         />
@@ -497,16 +574,16 @@
 
                      <div class="container__review--card">
                         <h1 class="container__review--card-heading">
-                           “A real sense of community, nurtured”
+                           “Một ý thức cộng đồng thực sự, được nuôi dưỡng”
                         </h1>
                         <p class="container__review--card-title">
-                           Really appreciate the help and support from the staff
-                           during these tough times. Shoutout to Katie for
-                           helping me always, even when I was out of the
-                           country. And always available when needed.
+                           Thực sự đánh giá cao sự giúp đỡ và hỗ trợ từ các nhân
+                           viên trong thời điểm khó khăn này. Cảm ơn Katie vì đã
+                           luôn giúp đỡ tôi, ngay cả khi tôi ở nước ngoài. Và
+                           luôn có sẵn khi cần thiết.
                         </p>
                         <a href="#" class="container__review--card-view"
-                           >View more</a
+                           >Xem thêm</a
                         >
                         <div class="container__review--card-star">
                            <i class="fa-solid fa-star"></i>
@@ -515,9 +592,9 @@
                            <i class="fa-solid fa-star"></i>
                            <i class="fa-solid fa-star"></i>
                         </div>
-                        <p class="container__review--card-address">Olga</p>
+                        <p class="container__review--card-address">Phú Quốc</p>
                         <p class="container__review--card-desc">
-                           Weave Studios – Kai Tak
+                           Làng chài cổ Hàm Ninh - Dinh Cậu
                         </p>
                         <a href="#" class="container__review--card-gg">
                            <img
@@ -528,7 +605,7 @@
                            <p>Google</p>
                         </a>
                         <img
-                           src="https://static-images.vnncdn.net/files/publish/2022/9/3/bien-vo-cuc-thai-binh-339.jpg"
+                           src="https://ik.imagekit.io/tvlk/blog/2022/12/lang-chai-ham-ninh-2.jpg?tr=dpr-2,w-675"
                            alt=""
                            class="container__review--card-img"
                         />
@@ -536,16 +613,16 @@
 
                      <div class="container__review--card">
                         <h1 class="container__review--card-heading">
-                           “A real sense of community, nurtured”
+                           “Một ý thức cộng đồng thực sự, được nuôi dưỡng”
                         </h1>
                         <p class="container__review--card-title">
-                           Really appreciate the help and support from the staff
-                           during these tough times. Shoutout to Katie for
-                           helping me always, even when I was out of the
-                           country. And always available when needed.
+                           Thực sự đánh giá cao sự giúp đỡ và hỗ trợ từ các nhân
+                           viên trong thời điểm khó khăn này. Cảm ơn Katie vì đã
+                           luôn giúp đỡ tôi, ngay cả khi tôi ở nước ngoài. Và
+                           luôn có sẵn khi cần thiết.
                         </p>
                         <a href="#" class="container__review--card-view"
-                           >View more</a
+                           >Xem thêm</a
                         >
                         <div class="container__review--card-star">
                            <i class="fa-solid fa-star"></i>
@@ -554,9 +631,9 @@
                            <i class="fa-solid fa-star"></i>
                            <i class="fa-solid fa-star"></i>
                         </div>
-                        <p class="container__review--card-address">Olga</p>
+                        <p class="container__review--card-address">Phú Quốc</p>
                         <p class="container__review--card-desc">
-                           Weave Studios – Kai Tak
+                           Làng chài cổ Hàm Ninh - Dinh Cậu
                         </p>
                         <a href="#" class="container__review--card-gg">
                            <img
@@ -567,7 +644,7 @@
                            <p>Google</p>
                         </a>
                         <img
-                           src="https://static-images.vnncdn.net/files/publish/2022/9/3/bien-vo-cuc-thai-binh-339.jpg"
+                           src="https://ik.imagekit.io/tvlk/blog/2022/12/lang-chai-ham-ninh-2.jpg?tr=dpr-2,w-675"
                            alt=""
                            class="container__review--card-img"
                         />
@@ -575,16 +652,16 @@
 
                      <div class="container__review--card">
                         <h1 class="container__review--card-heading">
-                           “A real sense of community, nurtured”
+                           “Một ý thức cộng đồng thực sự, được nuôi dưỡng”
                         </h1>
                         <p class="container__review--card-title">
-                           Really appreciate the help and support from the staff
-                           during these tough times. Shoutout to Katie for
-                           helping me always, even when I was out of the
-                           country. And always available when needed.
+                           Thực sự đánh giá cao sự giúp đỡ và hỗ trợ từ các nhân
+                           viên trong thời điểm khó khăn này. Cảm ơn Katie vì đã
+                           luôn giúp đỡ tôi, ngay cả khi tôi ở nước ngoài. Và
+                           luôn có sẵn khi cần thiết.
                         </p>
                         <a href="#" class="container__review--card-view"
-                           >View more</a
+                           >Xem thêm</a
                         >
                         <div class="container__review--card-star">
                            <i class="fa-solid fa-star"></i>
@@ -593,9 +670,9 @@
                            <i class="fa-solid fa-star"></i>
                            <i class="fa-solid fa-star"></i>
                         </div>
-                        <p class="container__review--card-address">Olga</p>
+                        <p class="container__review--card-address">Phú Quốc</p>
                         <p class="container__review--card-desc">
-                           Weave Studios – Kai Tak
+                           Làng chài cổ Hàm Ninh - Dinh Cậu
                         </p>
                         <a href="#" class="container__review--card-gg">
                            <img
@@ -606,7 +683,7 @@
                            <p>Google</p>
                         </a>
                         <img
-                           src="https://static-images.vnncdn.net/files/publish/2022/9/3/bien-vo-cuc-thai-binh-339.jpg"
+                           src="https://ik.imagekit.io/tvlk/blog/2022/12/lang-chai-ham-ninh-2.jpg?tr=dpr-2,w-675"
                            alt=""
                            class="container__review--card-img"
                         />
@@ -614,16 +691,16 @@
 
                      <div class="container__review--card">
                         <h1 class="container__review--card-heading">
-                           “A real sense of community, nurtured”
+                           “Một ý thức cộng đồng thực sự, được nuôi dưỡng”
                         </h1>
                         <p class="container__review--card-title">
-                           Really appreciate the help and support from the staff
-                           during these tough times. Shoutout to Katie for
-                           helping me always, even when I was out of the
-                           country. And always available when needed.
+                           Thực sự đánh giá cao sự giúp đỡ và hỗ trợ từ các nhân
+                           viên trong thời điểm khó khăn này. Cảm ơn Katie vì đã
+                           luôn giúp đỡ tôi, ngay cả khi tôi ở nước ngoài. Và
+                           luôn có sẵn khi cần thiết.
                         </p>
                         <a href="#" class="container__review--card-view"
-                           >View more</a
+                           >Xem thêm</a
                         >
                         <div class="container__review--card-star">
                            <i class="fa-solid fa-star"></i>
@@ -632,9 +709,9 @@
                            <i class="fa-solid fa-star"></i>
                            <i class="fa-solid fa-star"></i>
                         </div>
-                        <p class="container__review--card-address">Olga</p>
+                        <p class="container__review--card-address">Phú Quốc</p>
                         <p class="container__review--card-desc">
-                           Weave Studios – Kai Tak
+                           Làng chài cổ Hàm Ninh - Dinh Cậu
                         </p>
                         <a href="#" class="container__review--card-gg">
                            <img
@@ -645,7 +722,124 @@
                            <p>Google</p>
                         </a>
                         <img
-                           src="https://static-images.vnncdn.net/files/publish/2022/9/3/bien-vo-cuc-thai-binh-339.jpg"
+                           src="https://ik.imagekit.io/tvlk/blog/2022/12/lang-chai-ham-ninh-2.jpg?tr=dpr-2,w-675"
+                           alt=""
+                           class="container__review--card-img"
+                        />
+                     </div>
+
+                     <div class="container__review--card">
+                        <h1 class="container__review--card-heading">
+                           “Một ý thức cộng đồng thực sự, được nuôi dưỡng”
+                        </h1>
+                        <p class="container__review--card-title">
+                           Thực sự đánh giá cao sự giúp đỡ và hỗ trợ từ các nhân
+                           viên trong thời điểm khó khăn này. Cảm ơn Katie vì đã
+                           luôn giúp đỡ tôi, ngay cả khi tôi ở nước ngoài. Và
+                           luôn có sẵn khi cần thiết.
+                        </p>
+                        <a href="#" class="container__review--card-view"
+                           >Xem thêm</a
+                        >
+                        <div class="container__review--card-star">
+                           <i class="fa-solid fa-star"></i>
+                           <i class="fa-solid fa-star"></i>
+                           <i class="fa-solid fa-star"></i>
+                           <i class="fa-solid fa-star"></i>
+                           <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="container__review--card-address">Phú Quốc</p>
+                        <p class="container__review--card-desc">
+                           Làng chài cổ Hàm Ninh - Dinh Cậu
+                        </p>
+                        <a href="#" class="container__review--card-gg">
+                           <img
+                              class="container__review--card-icon-gg"
+                              src="./font/icons_google.svg"
+                              alt=""
+                           />
+                           <p>Google</p>
+                        </a>
+                        <img
+                           src="https://ik.imagekit.io/tvlk/blog/2022/12/lang-chai-ham-ninh-2.jpg?tr=dpr-2,w-675"
+                           alt=""
+                           class="container__review--card-img"
+                        />
+                     </div>
+
+                     <div class="container__review--card">
+                        <h1 class="container__review--card-heading">
+                           “Một ý thức cộng đồng thực sự, được nuôi dưỡng”
+                        </h1>
+                        <p class="container__review--card-title">
+                           Thực sự đánh giá cao sự giúp đỡ và hỗ trợ từ các nhân
+                           viên trong thời điểm khó khăn này. Cảm ơn Katie vì đã
+                           luôn giúp đỡ tôi, ngay cả khi tôi ở nước ngoài. Và
+                           luôn có sẵn khi cần thiết.
+                        </p>
+                        <a href="#" class="container__review--card-view"
+                           >Xem thêm</a
+                        >
+                        <div class="container__review--card-star">
+                           <i class="fa-solid fa-star"></i>
+                           <i class="fa-solid fa-star"></i>
+                           <i class="fa-solid fa-star"></i>
+                           <i class="fa-solid fa-star"></i>
+                           <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="container__review--card-address">Phú Quốc</p>
+                        <p class="container__review--card-desc">
+                           Làng chài cổ Hàm Ninh - Dinh Cậu
+                        </p>
+                        <a href="#" class="container__review--card-gg">
+                           <img
+                              class="container__review--card-icon-gg"
+                              src="./font/icons_google.svg"
+                              alt=""
+                           />
+                           <p>Google</p>
+                        </a>
+                        <img
+                           src="https://ik.imagekit.io/tvlk/blog/2022/12/lang-chai-ham-ninh-2.jpg?tr=dpr-2,w-675"
+                           alt=""
+                           class="container__review--card-img"
+                        />
+                     </div>
+
+                     <div class="container__review--card">
+                        <h1 class="container__review--card-heading">
+                           “Một ý thức cộng đồng thực sự, được nuôi dưỡng”
+                        </h1>
+                        <p class="container__review--card-title">
+                           Thực sự đánh giá cao sự giúp đỡ và hỗ trợ từ các nhân
+                           viên trong thời điểm khó khăn này. Cảm ơn Katie vì đã
+                           luôn giúp đỡ tôi, ngay cả khi tôi ở nước ngoài. Và
+                           luôn có sẵn khi cần thiết.
+                        </p>
+                        <a href="#" class="container__review--card-view"
+                           >Xem thêm</a
+                        >
+                        <div class="container__review--card-star">
+                           <i class="fa-solid fa-star"></i>
+                           <i class="fa-solid fa-star"></i>
+                           <i class="fa-solid fa-star"></i>
+                           <i class="fa-solid fa-star"></i>
+                           <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="container__review--card-address">Phú Quốc</p>
+                        <p class="container__review--card-desc">
+                           Làng chài cổ Hàm Ninh - Dinh Cậu
+                        </p>
+                        <a href="#" class="container__review--card-gg">
+                           <img
+                              class="container__review--card-icon-gg"
+                              src="./font/icons_google.svg"
+                              alt=""
+                           />
+                           <p>Google</p>
+                        </a>
+                        <img
+                           src="https://ik.imagekit.io/tvlk/blog/2022/12/lang-chai-ham-ninh-2.jpg?tr=dpr-2,w-675"
                            alt=""
                            class="container__review--card-img"
                         />
@@ -666,22 +860,22 @@
          <footer>
             <div class="footer__header">
                <div class="footer__header--content">
-                  <h1 class="footer__header--heading">Subscribe Newsletter</h1>
-                  <p class="footer__header--title">The Travel</p>
+                  <h1 class="footer__header--heading">
+                     Đăng kí để nhận thông báo mới
+                  </h1>
+                  <p class="footer__header--title">Chuyến du lịch</p>
                   <p class="footer__header--desc">
-                     Get inspired! Receive travel discounts, tips and behind the
-                     scenes stories.
+                     Lấy cảm hứng! Nhận giảm giá du lịch, mẹo và những câu
+                     chuyện hậu trường.
                   </p>
 
                   <form class="footer__form">
                      <input
                         type="email"
-                        placeholder="Your email address"
+                        placeholder="Địa chỉ email của bạn"
                         class="footer__header--input"
                      />
-                     <button class="footer__header--subscribe">
-                        Subscribe
-                     </button>
+                     <button class="footer__header--subscribe">Đăng kí</button>
                   </form>
                </div>
 
@@ -695,7 +889,10 @@
             <div class="footer__bottom">
                <div class="footer__bottom--left">
                   <div class="footer__bottom--logo">
-                     <img src="./font/Logo bottom.svg" alt="" />
+                     <img
+                        src="./font/logo-footer-2-removebg-preview.png"
+                        alt=""
+                     />
                   </div>
                   <div class="footer__bottom--socials">
                      <i class="fa-brands fa-facebook"></i>
@@ -708,51 +905,47 @@
                <div class="footer__bottom--right">
                   <div class="footer__bottom--item">
                      <ul>
-                        <p class="footer__bottom--heading">Our Destinations</p>
-                        <li>Canada</li>
-                        <li>Canada</li>
-                        <li>Canada</li>
-                        <li>Canada</li>
+                        <p class="footer__bottom--heading">Điểm đến</p>
+                        <li>Hà Nội</li>
+                        <li>Sài Gòn</li>
+                        <li>Phú Quốc</li>
+                        <li>Nha Trang</li>
                      </ul>
                   </div>
 
                   <div class="footer__bottom--item">
                      <ul>
-                        <p class="footer__bottom--heading">Our Destinations</p>
-                        <li>Canada</li>
-                        <li>Canada</li>
-                        <li>Canada</li>
-                        <li>Canada</li>
+                        <p class="footer__bottom--heading">Dịch vụ</p>
+                        <li>Du ngoạn</li>
+                        <li>Chèo thuyền</li>
+                        <li>Bơi lội</li>
+                        <li>Đa hoạt động</li>
                      </ul>
                   </div>
 
                   <div class="footer__bottom--item">
                      <ul>
-                        <p class="footer__bottom--heading">Our Destinations</p>
-                        <li>Canada</li>
-                        <li>Canada</li>
-                        <li>Canada</li>
-                        <li>Canada</li>
+                        <p class="footer__bottom--heading">Các sản phẩm</p>
+                        <li>Chuyến bay</li>
+                        <li>Khách sạn</li>
+                        <li>Thuê ô tô</li>
+                        <li>Biệt thự</li>
                      </ul>
                   </div>
 
                   <div class="footer__bottom--item">
                      <ul>
-                        <p class="footer__bottom--heading">Our Destinations</p>
-                        <li>Canada</li>
-                        <li>Canada</li>
-                        <li>Canada</li>
-                        <li>Canada</li>
+                        <p class="footer__bottom--heading">Giới thiệu</p>
+                        <li>Về chúng tôi</li>
+                        <li>Cách đặt chỗ</li>
                      </ul>
                   </div>
 
                   <div class="footer__bottom--item">
                      <ul>
-                        <p class="footer__bottom--heading">Our Destinations</p>
-                        <li>Canada</li>
-                        <li>Canada</li>
-                        <li>Canada</li>
-                        <li>Canada</li>
+                        <p class="footer__bottom--heading">Liên hệ</p>
+                        <li>Về chúng tôi</li>
+                        <li>Cách đặt chỗ</li>
                      </ul>
                   </div>
                </div>
@@ -760,6 +953,7 @@
          </footer>
       </div>
 
+      <script src="/js/default.js"></script>
       <script type="text/javascript" src="/js/index.js"></script>
    </body>
 </html>

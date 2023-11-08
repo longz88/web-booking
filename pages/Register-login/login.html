@@ -22,11 +22,11 @@
          <div class="container">
             <div class="content">
                <div class="header">
-                  <a href="/" class="return">
+                  <div class="return">
                      <i class="fa-solid fa-angle-left"></i>
 
                      <p>Back</p>
-                  </a>
+                  </div>
 
                   <a href="/">
                      <img src="/font/Logo.svg" alt="" />
@@ -42,6 +42,7 @@
                      <input
                         type="email"
                         id="email"
+                        name="email"
                         placeholder="john.doe@gmail.com"
                         autofocus
                      />
@@ -52,6 +53,7 @@
                      <input
                         type="password"
                         id="password"
+                        name="password"
                         placeholder="password > 6 characters"
                      />
                      <div class="toggle-password">
@@ -62,16 +64,14 @@
 
                <div class="forgot-password">
                   <div class="remember">
-                     <input type="checkbox" name="" id="" />
+                     <input type="checkbox" name="check-box" id="check-box" />
                      <p>Remember me</p>
                   </div>
 
                   <a href="#">Forgot Password</a>
                </div>
 
-               <button class="btn-login zoom">
-                  <a href="/pages/user/user.html"> Login </a>
-               </button>
+               <button type="submit" class="btn-login">Login</button>
 
                <p class="create-acc">
                   Don’t have an account?<a

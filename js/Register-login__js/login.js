@@ -3,10 +3,16 @@ const $$ = document.querySelectorAll.bind(document);
 
 // ======= toggle password ========
 const eyeIcon = $('.toggle-password-icon');
+const form = $('.form');
 const inputPassword = $('#password');
 const inputEmail = $('#email');
 const formInput = $$('.form-group');
 const btnLogin = $('.btn-login');
+const checkboxRemember = $('#check-box');
+
+const endpoint = 'http://localhost:3000/userData';
+
+checkboxRemember.checked = true;
 
 eyeIcon.addEventListener('click', function () {
    this.classList.toggle('fa-eye');
@@ -56,6 +62,7 @@ inputPassword.addEventListener('input', (e) => {
 });
 
 // ======== toggle btn ========
+
 const toggleButton = () => {
    if (
       formInput[0].classList.contains('valid') &&
@@ -82,7 +89,7 @@ setInterval(() => {
       active += 1;
    }
    reloadSlider();
-}, 5000);
+}, 3000);
 
 function reloadSlider() {
    let checkLeft = imgs[active].offsetLeft;
@@ -92,3 +99,44 @@ function reloadSlider() {
    lastActiveDot.classList.remove('active');
    dots[active].classList.add('active');
 }
+
+// -------- return ---------
+const returnClick = $('.return');
+
+returnClick.addEventListener('click', () => {
+   history.back();
+});
+
+// ============= API ================
+
+// ======== check email xem có trùng vs userData ko? ===========
+async function login() {
+   const response = await fetch(endpoint);
+   const data = await response.json();
+   btnLogin.addEventListener('click', () => {
+      if (
+         data.find(
+            (item) =>
+               item.email === inputEmail.value &&
+               item.password === inputPassword.value,
+         )
+      ) {
+         location.href = '/pages/user/user.html';
+      } else {
+         if (
+            confirm(
+               'Email chưa được đăng kí, bạn có muốn tiến tới đăng kí ^.^ !!!!',
+            ) == true
+         ) {
+            location.href = '/pages/Register-login/signUp.html';
+         } else {
+            inputEmail.value = '';
+            if (inputEmail.value == '') {
+               formInput[0].classList.remove('valid');
+            }
+         }
+      }
+   });
+}
+
+login();

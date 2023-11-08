@@ -70,6 +70,7 @@ li {
    align-items: center;
    gap: 4px;
    font-size: 14px;
+   cursor: pointer;
 }
 
 .header img {
@@ -175,20 +176,13 @@ li {
    justify-content: center;
    width: 100%;
    opacity: 0.5;
-}
-
-.btn-login a {
-   width: 100%;
    padding: 16px 0;
-   /* cursor: default; */
+   cursor: pointer;
    pointer-events: none;
 }
 
 .btn-login.active {
    opacity: 1;
-}
-
-.btn-login.active a {
    cursor: pointer;
    pointer-events: all;
 }

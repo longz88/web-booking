@@ -44,3 +44,33 @@ userTicketItems.forEach((item, index) => {
       userTicketList.classList.add('active');
    });
 });
+
+// =========== API ============
+// const endpoint = 'http://localhost:3000/user';
+
+async function getUser() {
+   const response = await fetch(endpoint);
+   const data = await response.json();
+
+   if (data.length > 0 && Array.isArray(data)) {
+      data.forEach((user) => renderUser(user));
+   }
+}
+
+function renderUser(user) {
+   const headerName = $('.user__name');
+   const headerEmail = $('.user__email');
+   const contentName = $('.user-name');
+   const contentEmail = $('.user-email');
+   const contentPassword = $('.user-password');
+   const contentPhoneNumber = $('.user-phoneNumber');
+
+   headerName.innerText = user.name;
+   headerEmail.innerText = user.email;
+   contentName.innerText = user.name;
+   contentEmail.innerText = user.email;
+   contentPassword.innerText = user.password;
+   contentPhoneNumber.innerText = user.phoneNumber;
+}
+
+getUser();

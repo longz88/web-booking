@@ -1,0 +1,470 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+html {
+   font-family: 'Dosis', sans-serif;
+   font-size: 16px;
+   font-weight: 600;
+   letter-spacing: 1.5px;
+   scroll-behavior: smooth;
+   color: var(--black-color);
+}
+
+button,
+input,
+select {
+   border: none;
+   outline: none;
+}
+
+a,
+li {
+   text-decoration: none;
+   list-style: none;
+   color: var(--black-color);
+}
+
+p {
+   display: inline-block;
+}
+
+:root {
+   --black-color: #112211;
+   --black-color-opacity: rgba(17, 34, 17, 0.2);
+   --white-color: #fff;
+   --mint-green: #8dd3bb;
+   --mint-green-op: rgba(141, 211, 187, 0.6);
+   --mint-green-hover: #4bad8b;
+   --light-green: #cdeae1;
+   --box-shadow: 0px 4px 16px 0px rgba(17, 34, 17, 0.08);
+   --border-solid: 1px solid var(--black-color-opacity);
+   --mint-orange: #ff8682ff;
+
+   --header-height: 90px;
+   --width: 1200px;
+}
+
+.btn-show {
+   padding: 12px 16px;
+   border-radius: 4px;
+   background-color: var(--mint-green);
+   color: var(--black-color);
+   font-size: 14px;
+   font-weight: 500;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 4px;
+   cursor: pointer;
+   transition: all 0.25s linear;
+}
+
+.btn-see {
+   padding: 12px 16px;
+   font-size: 14px;
+   font-weight: 500;
+   border-radius: 4px;
+   border: 2px solid var(--mint-green);
+   background-color: transparent;
+   cursor: pointer;
+   transition: all 0.25s linear;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 4px;
+}
+
+.btn-see:hover {
+   background-color: var(--mint-green);
+}
+
+:hover.zoom {
+   transform: scale(1.04);
+   transition: all 0.25s linear;
+}
+
+/* ========= scroll ========= */
+::-webkit-scrollbar {
+   width: 8px;
+}
+
+::-webkit-scrollbar-track {
+   box-shadow: inset 0 0 5px rgba(17, 34, 17, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+   background: var(--mint-green);
+}
+
+/* ======= container =========== */
+.container {
+   margin: calc(var(--header-height) + 48px) auto 120px;
+   width: 100%;
+   max-width: var(--width);
+   display: grid;
+   grid-template-columns: 2fr 1fr;
+   gap: 40px;
+}
+
+.container__content {
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
+}
+
+.container__ticket {
+   padding: 32px 24px;
+   border-radius: 12px;
+   box-shadow: var(--box-shadow);
+   cursor: pointer;
+}
+
+.container__ticket--airline {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 28px;
+}
+
+.container__ticket--heading {
+   font-size: 24px;
+   font-weight: 700;
+}
+
+.container__ticket--price {
+   font-size: 14px;
+   font-weight: 700;
+   color: var(--mint-orange);
+}
+
+.container__ticket--price strong {
+   font-size: 32px;
+}
+
+.container__ticket--flight {
+   display: flex;
+   justify-content: space-between;
+}
+
+.container__ticket--flight-image {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   padding: 16px 32px;
+   gap: 24px;
+   border: 1px solid var(--mint-green);
+   border-radius: 8px;
+   margin-bottom: 40px;
+}
+
+.container__ticket--flight-image img {
+   width: 64px;
+   height: 44px;
+   object-fit: cover;
+}
+
+.container__ticket--flight-heading {
+   font-size: 24px;
+   margin-bottom: 8px;
+}
+
+.container__ticket--flight-desc {
+   font-style: 14px;
+   font-weight: 500;
+}
+
+.container__ticket--flight-address p {
+   opacity: 0.75;
+}
+
+.container__ticket--schedule {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.container__ticket--schedule-time {
+}
+
+.container__ticket--schedule-time h1 {
+   font-size: 24px;
+}
+
+.container__ticket--schedule-time p {
+   font-weight: 500;
+   opacity: 0.6;
+}
+
+.container__ticket--schedule-icon {
+   font-size: 36px;
+   display: flex;
+   align-items: center;
+   gap: 24px;
+}
+
+.container__payment {
+   padding: 16px;
+   border-radius: 12px;
+   box-shadow: var(--box-shadow);
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+}
+
+.container__payment--form {
+   position: relative;
+   border-radius: 12px;
+}
+
+.container__pay--full {
+   padding: 16px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.container__payment--form.active {
+   background-color: var(--mint-green);
+}
+
+.container__payment--form label {
+   cursor: pointer;
+}
+
+.container__payment--form .radio-check {
+   position: absolute;
+   width: 20px;
+   height: 20px;
+   right: 16px;
+   top: 50%;
+   transform: translateY(-50%);
+}
+
+.container__pay--content {
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+   padding-right: 60px;
+}
+
+.container__pay--heading {
+   font-weight: 700;
+}
+
+.container__pay--desc {
+   font-size: 14px;
+   font-weight: 400;
+}
+
+.container__pay--part {
+}
+
+.container__pay--more-info {
+   font-weight: 500;
+   font-size: 12px;
+   text-decoration: underline;
+}
+
+.container__card {
+}
+
+.container__card--login {
+   padding: 16px;
+   border-radius: 12px;
+   box-shadow: var(--box-shadow);
+}
+
+.container__card--heading {
+   margin-bottom: 32px;
+   font-size: 20px;
+   font-weight: 700;
+}
+
+.container__card--btn {
+   display: flex;
+   gap: 16px;
+}
+
+.container__card--btn-signup,
+.container__card--btn-login {
+   text-align: center;
+   flex: 1;
+   font-size: 16px;
+   font-weight: 500;
+}
+
+.container__card--list {
+   padding: 16px;
+   border-radius: 12px;
+   box-shadow: var(--box-shadow);
+   display: none;
+}
+
+.container__card--item {
+   padding: 16px;
+   border-radius: 12px;
+   background-color: var(--mint-green);
+   display: flex;
+   align-items: center;
+   width: 100%;
+   margin-bottom: 16px;
+}
+
+.fa-cc-visa {
+   font-size: 24px;
+   margin-right: 32px;
+}
+
+.container__card--item-number {
+   font-weight: 700;
+}
+
+.container__card--item-cvc {
+   margin: 0 8px;
+}
+
+.container__card--item-date {
+   font-size: 14px;
+   font-weight: 400;
+}
+
+.container__card--item input {
+   margin-left: auto;
+   width: 16px;
+   height: 16px;
+}
+
+.container__card--create {
+   width: 100%;
+   display: flex;
+   text-align: center;
+   justify-content: center;
+   border: 4px dashed var(--mint-green);
+   border-radius: 16px;
+   padding: 80px;
+   cursor: pointer;
+}
+
+.option__payment--card-create i {
+   padding-left: 1px;
+   font-size: 40px;
+   background-color: var(--mint-green);
+   color: var(--white-color);
+   border-radius: 50%;
+   border: 4px solid var(--mint-green);
+}
+
+.option__payment--card-create p {
+   margin-top: 12px;
+   display: block;
+}
+
+.container__bill {
+   border-radius: 12px;
+   padding: 16px;
+   box-shadow: var(--box-shadow);
+   display: inline-block;
+}
+
+.container__bill--header {
+   display: flex;
+   gap: 24px;
+}
+
+.container__bill--header-image img {
+   width: 120px;
+   height: 120px;
+   object-fit: cover;
+   border-radius: 12px;
+}
+
+.container__bill--class {
+   font-weight: 500;
+   display: block;
+}
+
+.container__bill--heading {
+   font-size: 20px;
+   font-weight: 600;
+   margin: 0 0 16px;
+   letter-spacing: 0;
+}
+
+.container__bill--rating {
+   display: flex;
+}
+
+.container__bill--reating-star {
+   font-size: 12px;
+   font-weight: 500;
+   padding: 8px;
+}
+
+.container__bill--review {
+   display: flex;
+   align-items: center;
+}
+
+.container__bill--review-rating {
+   font-size: 12;
+   font-weight: 700;
+   margin: 0 4px 0 8px;
+}
+
+.container__bill--review-number {
+   font-size: 12px;
+   font-weight: 500;
+}
+
+.container__bill--protect {
+   width: 100%;
+   margin: 16px 0;
+   padding: 16px 0;
+   border-top: var(--border-solid);
+   border-bottom: var(--border-solid);
+   font-weight: 500;
+}
+
+.container__bill--protect strong {
+   font-weight: 700;
+}
+
+.container__bill--price {
+}
+
+.container__bill--price-heading {
+   font-weight: 700;
+   margin-bottom: 16px;
+}
+
+.container__bill--price-list {
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+   padding-bottom: 16px;
+   border-bottom: var(--border-solid);
+   margin-bottom: 16px;
+}
+
+.container__bill--price-item {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+}
+
+.container__bill--title {
+   font-weight: 500;
+}
+
+.container__bill--title-price {
+}
+
+.container__bill--total {
+}
+
+.container__bill--btn {
+   margin-top: 16px;
+}

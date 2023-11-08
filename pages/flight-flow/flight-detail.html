@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Web-booking</title>
+      <link
+         rel="shortcut icon"
+         type="image/png"
+         href="/font/logo-web-2-removebg-preview.png"
+      />
+
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700;800&display=swap"
+         rel="stylesheet"
+      />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      />
+
+      <link rel="stylesheet" href="/css/flight-flow__css/flight-detail.css" />
+      <link rel="stylesheet" href="/css/default.css" />
+   </head>
+   <body>
+      <div class="app">
+         <header>
+            <div class="header__logo">
+               <a href="/">
+                  <img
+                     class="header__logo--img"
+                     src="/font/logo-main-5-removebg-preview.png"
+                     alt="logo"
+                  />
+               </a>
+            </div>
+
+            <div class="header__menu">
+               <div class="header__find">
+                  <a
+                     href="/pages/flight-flow/flight.html"
+                     class="header__find--item"
+                  >
+                     <i class="fa-solid fa-plane"></i>
+                     <p>Chuyến bay</p>
+                  </a>
+                  <a
+                     href="/pages/hotel-flow/hotel.html"
+                     class="header__find--item"
+                  >
+                     <i class="fa-solid fa-bed"></i>
+                     <p>Khách sạn</p>
+                  </a>
+               </div>
+
+               <div class="header__register--wrapper show">
+                  <div class="header__register">
+                     <a
+                        href="/pages/Register-login/login.html"
+                        class="header__login"
+                        >Đăng nhập</a
+                     >
+                     <a
+                        href="/pages/Register-login/signUp.html"
+                        class="header__sign-up zoom"
+                        >Đăng ký</a
+                     >
+                  </div>
+               </div>
+
+               <div class="header__user--wrapper">
+                  <div class="header__user">
+                     <a href="#" class="header__favorite">
+                        <i class="fa-solid fa-heart"></i>
+                        <p>Yêu thích</p>
+                     </a>
+
+                     <div class="header__user--container">
+                        <div class="header__avatar">
+                           <img
+                              src="https://vapa.vn/wp-content/uploads/2022/12/anh-den-ngau.jpeg"
+                              alt=""
+                           />
+                           <div class="header__avatar--name">
+                              John danati jus
+                           </div>
+                        </div>
+
+                        <div class="header__user--title">
+                           <div class="header__user--title-list">
+                              <div class="header__user--acc">
+                                 <a
+                                    href="/pages/user/user.html"
+                                    class="header__user--title-item zoom"
+                                 >
+                                    <i class="fa-solid fa-user"></i>
+                                    <p>Tài khoản</p>
+                                    <i class="fa-solid fa-angle-right"></i>
+                                 </a>
+
+                                 <a
+                                    href="#"
+                                    class="header__user--title-item zoom"
+                                 >
+                                    <i class="fa-solid fa-gear"></i>
+                                    <p>Cài đặt</p>
+                                    <i class="fa-solid fa-angle-right"></i>
+                                 </a>
+                              </div>
+
+                              <div class="header__user--logout">
+                                 <a
+                                    href="#"
+                                    class="header__user--title-item zoom"
+                                 >
+                                    <i class="fa-solid fa-circle-question"></i>
+                                    <p>Trợ giúp</p>
+                                    <i class="fa-solid fa-angle-right"></i>
+                                 </a>
+
+                                 <a
+                                    href="#"
+                                    class="header__user--title-item zoom header__user--title-logout"
+                                 >
+                                    <i
+                                       class="fa-solid fa-right-from-bracket"
+                                    ></i>
+                                    <p>Đăng xuất</p>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="toggle-menu">
+               <i class="fa-solid fa-bars"></i>
+            </div>
+         </header>
+
+         <div class="container">
+            <div class="container__header">
+               <div class="container__header--title">
+                  <h1 class="container__header-heading">VietJet Airlines</h1>
+                  <div class="container__header--address">
+                     <i class="fa-solid fa-location-dot"></i>
+                     <p>
+                        Đường Trường Sơn, Phường 2, Quận Tân Bình, Thành Phố Hồ
+                        Chí Minh
+                     </p>
+                  </div>
+                  <div class="container__header--review">
+                     <div class="container__header--star btn-see">4.2</div>
+                     <p class="container__header--review-rating">Very Good</p>
+                     <p class="container__header--review-number">54 reviews</p>
+                  </div>
+               </div>
+
+               <div class="container__header--booking">
+                  <div class="container__header--price">$240</div>
+                  <div class="container__header--btn">
+                     <div class="container__header--btn-favorite btn-see">
+                        <!-- <i class="fa-solid fa-heart"></i> -->
+                        <i class="fa-regular fa-heart"></i>
+                     </div>
+                     <div class="container__header--btn-share btn-see">
+                        <i class="fa-solid fa-share-nodes"></i>
+                     </div>
+                     <a
+                        href="./flight-booking.html"
+                        class="container__header--btn-book btn-show"
+                     >
+                        Đặt vé
+                     </a>
+                  </div>
+               </div>
+            </div>
+
+            <div class="container__airline--image">
+               <img
+                  src="https://www.discover-airlines.com/en/assets/fleet/Discover_Airlines_A330-300_2_1800x1200.jpg"
+                  alt="img"
+                  class="container__airline--img"
+               />
+            </div>
+
+            <div class="container__title">
+               <div class="container__title--header">
+                  <h1 class="container__title--heading">Các hạng vé cơ bản:</h1>
+                  <div class="container__title--class">
+                     <div class="container__title--class-item">
+                        <input type="checkbox" />
+                        <p>Hạng phổ thông</p>
+                     </div>
+
+                     <div class="container__title--class-item">
+                        <input type="checkbox" />
+                        <p>Hạng nhất</p>
+                     </div>
+
+                     <div class="container__title--class-item">
+                        <input type="checkbox" />
+                        <p>Hạng thương gia</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="container__title--policies">
+                  <div class="container__title--policies-heading">
+                     Chính sách của VietJet Airlines
+                  </div>
+                  <div class="container__title--policies-content">
+                     <div class="container__title--policies-desc">
+                        <i class="fa-solid fa-stopwatch"></i>
+                        <p>
+                           Vệ sinh trước chuyến bay, lắp đặt bộ lọc HEPA trong
+                           cabin.
+                        </p>
+                     </div>
+
+                     <div class="container__title--policies-desc">
+                        <i class="fa-solid fa-stopwatch"></i>
+                        <p>Câu hỏi kiểm tra sức khỏe trước chuyến bay.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="container__sticket--list">
+               <div class="container__ticket--item">
+                  <div class="container__ticket--time">
+                     <div class="container__ticket--time-day">
+                        Return Wed, Dec 8
+                     </div>
+                     <div class="container__ticket--time-hour">2h 28m</div>
+                  </div>
+
+                  <div class="container__ticket--title">
+                     <div class="container__ticket--flight">
+                        <div class="container__ticket--flight-image">
+                           <img src="/font/airline-company.jpg" alt="img" />
+                           <div class="container__ticket--flight-content">
+                              <h3 class="container__ticket--flight-heading">
+                                 Emirates
+                              </h3>
+                              <p class="container__ticket--flight-desc">
+                                 Airbus A320
+                              </p>
+                           </div>
+                        </div>
+
+                        <div class="container__ticket--flight-icons">
+                           <i class="fa-solid fa-wifi"></i>
+                           <i class="fa-solid fa-plane"></i>
+                           <i class="fa-solid fa-earth-asia"></i>
+                           <i class="fa-solid fa-suitcase"></i>
+                           <i class="fa-solid fa-utensils"></i>
+                        </div>
+                     </div>
+
+                     <div class="container__ticket--schedule">
+                        <div class="container__ticket--schedule-time">
+                           <h1>12:00 pm</h1>
+                           <p>Newark(EWR)</p>
+                        </div>
+
+                        <div class="container__ticket--schedule-icon">
+                           <img src="/font/Line dot.svg" alt="" />
+                           <i class="fa-solid fa-plane"></i>
+                           <img src="/font/Line right.svg" alt="" />
+                        </div>
+
+                        <div class="container__ticket--schedule-time">
+                           <h1>12:00 pm</h1>
+                           <p>Newark(EWR)</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="container__ticket--item">
+                  <div class="container__ticket--time">
+                     <div class="container__ticket--time-day">
+                        Return Wed, Dec 8
+                     </div>
+                     <div class="container__ticket--time-hour">2h 28m</div>
+                  </div>
+
+                  <div class="container__ticket--title">
+                     <div class="container__ticket--flight">
+                        <div class="container__ticket--flight-image">
+                           <img src="/font/airline-company.jpg" alt="img" />
+                           <div class="container__ticket--flight-content">
+                              <h3 class="container__ticket--flight-heading">
+                                 Emirates
+                              </h3>
+                              <p class="container__ticket--flight-desc">
+                                 Airbus A320
+                              </p>
+                           </div>
+                        </div>
+
+                        <div class="container__ticket--flight-icons">
+                           <i class="fa-solid fa-wifi"></i>
+                           <i class="fa-solid fa-plane"></i>
+                           <i class="fa-solid fa-earth-asia"></i>
+                           <i class="fa-solid fa-suitcase"></i>
+                           <i class="fa-solid fa-utensils"></i>
+                        </div>
+                     </div>
+
+                     <div class="container__ticket--schedule">
+                        <div class="container__ticket--schedule-time">
+                           <h1>12:00 pm</h1>
+                           <p>Newark(EWR)</p>
+                        </div>
+
+                        <div class="container__ticket--schedule-icon">
+                           <img src="/font/Line dot.svg" alt="" />
+                           <i class="fa-solid fa-plane"></i>
+                           <img src="/font/Line right.svg" alt="" />
+                        </div>
+
+                        <div class="container__ticket--schedule-time">
+                           <h1>12:00 pm</h1>
+                           <p>Newark(EWR)</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <footer>
+            <div class="footer__header">
+               <div class="footer__header--content">
+                  <h1 class="footer__header--heading">
+                     Đăng kí để nhận thông báo mới
+                  </h1>
+                  <p class="footer__header--title">Chuyến du lịch</p>
+                  <p class="footer__header--desc">
+                     Lấy cảm hứng! Nhận giảm giá du lịch, mẹo và những câu
+                     chuyện hậu trường.
+                  </p>
+
+                  <form class="footer__form">
+                     <input
+                        type="email"
+                        placeholder="Địa chỉ email của bạn"
+                        class="footer__header--input"
+                     />
+                     <button class="footer__header--subscribe">Đăng kí</button>
+                  </form>
+               </div>
+
+               <img
+                  class="footer__header--vector"
+                  src="/font/vector-mailbox-footer.svg"
+                  alt=""
+               />
+            </div>
+
+            <div class="footer__bottom">
+               <div class="footer__bottom--left">
+                  <div class="footer__bottom--logo">
+                     <img
+                        src="/font/logo-footer-2-removebg-preview.png"
+                        alt=""
+                     />
+                  </div>
+                  <div class="footer__bottom--socials">
+                     <i class="fa-brands fa-facebook"></i>
+                     <i class="fa-brands fa-twitter"></i>
+                     <i class="fa-brands fa-youtube"></i>
+                     <i class="fa-brands fa-instagram"></i>
+                  </div>
+               </div>
+
+               <div class="footer__bottom--right">
+                  <div class="footer__bottom--item">
+                     <ul>
+                        <p class="footer__bottom--heading">Điểm đến</p>
+                        <li>Hà Nội</li>
+                        <li>Sài Gòn</li>
+                        <li>Phú Quốc</li>
+                        <li>Nha Trang</li>
+                     </ul>
+                  </div>
+
+                  <div class="footer__bottom--item">
+                     <ul>
+                        <p class="footer__bottom--heading">Dịch vụ</p>
+                        <li>Du ngoạn</li>
+                        <li>Chèo thuyền</li>
+                        <li>Bơi lội</li>
+                        <li>Đa hoạt động</li>
+                     </ul>
+                  </div>
+
+                  <div class="footer__bottom--item">
+                     <ul>
+                        <p class="footer__bottom--heading">Các sản phẩm</p>
+                        <li>Chuyến bay</li>
+                        <li>Khách sạn</li>
+                        <li>Thuê ô tô</li>
+                        <li>Biệt thự</li>
+                     </ul>
+                  </div>
+
+                  <div class="footer__bottom--item">
+                     <ul>
+                        <p class="footer__bottom--heading">Giới thiệu</p>
+                        <li>Về chúng tôi</li>
+                        <li>Cách đặt chỗ</li>
+                     </ul>
+                  </div>
+
+                  <div class="footer__bottom--item">
+                     <ul>
+                        <p class="footer__bottom--heading">Liên hệ</p>
+                        <li>Về chúng tôi</li>
+                        <li>Cách đặt chỗ</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </footer>
+      </div>
+
+      <script src="/js/default.js"></script>
+      <script src="/js/flight-flow__js/flight-detail.js"></script>
+   </body>
+</html>

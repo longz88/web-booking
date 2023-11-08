@@ -152,6 +152,7 @@ li {
    border-radius: 50%;
    font-size: 20px;
    cursor: pointer;
+   transform: translateX(-100%);
 }
 
 .user__name {
@@ -381,6 +382,7 @@ li {
 }
 
 .option__tickets--form {
+   width: 120px;
 }
 
 .option__tickets--address {

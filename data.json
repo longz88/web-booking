@@ -1,19 +1,138 @@
 {
-  "users": [
-    {
-      "name": "Chu Thành Long",
-      "phoneNumber": "0763325145",
-      "email": "longquangthuy307@gmail.com",
-      "password": "1234567",
-      "id": 2
-    },
-    {
-      "name": "Chu Thành Long",
-      "phoneNumber": "0763325145",
-      "email": "chuthanhlong2k2@gmail.com",
-      "password": "1234567",
-      "remember": true,
-      "id": 3
-    }
-  ]
+   "user": [
+      {
+         "name": "Chu Thành Long",
+         "phoneNumber": "0763325145",
+         "email": "chuthanhlong2k2@gmail.com",
+         "password": "1111111",
+         "remember": true,
+         "id": 1
+      }
+   ],
+   "userData": [
+      {
+         "name": "Chu Thành Long",
+         "phoneNumber": 763325145,
+         "email": "longquangthuy307@gmail.com",
+         "password": "1111111",
+         "remember": true,
+         "id": 1
+      },
+      {
+         "name": "Chu Thành Long",
+         "phoneNumber": "0763325145",
+         "email": "chuthanhlong2k2@gmail.com",
+         "password": "1111111",
+         "remember": true,
+         "id": 2
+      }
+   ],
+   "userFights": [],
+   "userHotels": [],
+   "flights": [
+      {
+         "id": 1,
+         "imgLogo": "/font/vietjet-airlines-img.jpg",
+         "imgFlight": "/font/vietjet-flight.jpg",
+         "airline": "VietJet Air",
+         "flightCode": "VJ-413",
+         "timeFromGo": "21:25",
+         "timeToGo": "23:20",
+         "addressFrom": "Hà Nội (HNA)",
+         "addressTo": "Đà Lạt (DLI)",
+         "date": "Thứ 5, 9 tháng 11",
+         "timeFromReturn": "18:15",
+         "timeToReturn": "20:05",
+         "timeTotal": "1h 55m",
+         "address": "Đường Trường Sơn, Phường 2, Quận Tân Bình, Thành Phố Hồ Chí Minh",
+         "price": "240$"
+      },
+      {
+         "id": 2,
+         "imgLogo": "/font/bamboo-airways-img.jpg",
+         "imgFlight": "/font/bamboo-airways-flgight.jpg",
+         "airline": "Bamboo Airways",
+         "flightCode": "QH-1421",
+         "timeFromGo": "08:55",
+         "timeToGo": "10:50",
+
+         "addressFrom": "Hà Nội (HNA)",
+         "addressTo": "Đà Nẵng (DAD)",
+         "date": "Thứ 4, 8 tháng 11",
+         "timeFromReturn": "18:15",
+         "timeToReturn": "20:05",
+         "timeTotal": "1h 55m",
+         "address": "Cảng hàng không quốc tế Nội Bài (sân bay Nội Bài) thuộc huyện Sóc Sơn, thành phố Hà Nội",
+         "price": "240$"
+      },
+      {
+         "id": 3,
+         "imgLogo": "/font/vietnam-airline-img.jpg",
+         "imgFlight": "/font/vietnam-airlines-flight.jpg",
+         "airline": "Vietnam Airlines",
+         "flightCode": "VN-1573",
+         "timeFromGo": "06:55",
+         "timeToGo": "08:50",
+         "addressFrom": "Hà Nội (HNA)",
+         "addressTo": "Đà Lạt (DLI)",
+         "date": "Thứ 6, 10 tháng 11",
+         "timeFromReturn": "18:15",
+         "timeToReturn": "20:05",
+         "timeTotal": "1h 55m",
+         "address": "Cảng hàng không quốc tế Nội Bài (sân bay Nội Bài) thuộc huyện Sóc Sơn, thành phố Hà Nội",
+         "price": "210$"
+      },
+      {
+         "id": 4,
+         "imgLogo": "/font/vietjet-airlines-img.jpg",
+         "imgFlight": "/font/vietjet-flight.jpg",
+         "airline": "VietJet Air",
+         "flightCode": "VJ-413",
+         "timeFromGo": "21:25",
+         "timeToGo": "23:20",
+         "addressFrom": "Hà Nội (HNA)",
+         "addressTo": "Đà Lạt (DLI)",
+         "date": "Thứ 2, 3 tháng 11",
+         "timeFromReturn": "18:15",
+         "timeToReturn": "20:05",
+         "timeTotal": "1h 55m",
+         "address": "Đường Trường Sơn, Phường 2, Quận Tân Bình, Thành Phố Hồ Chí Minh",
+         "price": "200$"
+      },
+      {
+         "id": 5,
+         "imgLogo": "/font/bamboo-airways-img.jpg",
+         "imgFlight": "/font/bamboo-airways-flgight.jpg",
+         "airline": "Bamboo Airways",
+         "flightCode": "QH-1421",
+         "timeFromGo": "08:55",
+         "timeToGo": "10:50",
+         "addressFrom": "Hà Nội (HNA)",
+         "addressTo": "Đà Lạt (DLI)",
+         "date": "Thứ 6, 8 tháng 11",
+         "timeFromReturn": "18:15",
+         "timeToReturn": "20:05",
+         "timeTotal": "1h 55m",
+         "address": "Cảng hàng không quốc tế Nội Bài (sân bay Nội Bài) thuộc huyện Sóc Sơn, thành phố Hà Nội",
+         "price": "210$"
+      },
+      {
+         "id": 6,
+         "imgLogo": "/font/vietnam-airline-img.jpg",
+         "imgFlight": "/font/vietnam-airlines-flight.jpg",
+         "airline": "Vietnam Airlines",
+         "flightCode": "VN-1573",
+         "timeFromGo": "06:55",
+         "timeToGo": "08:50",
+         "addressFrom": "Hà Nội (HNA)",
+         "addressTo": "Đà Lạt (DLI)",
+         "date": "Thứ 4, 7 tháng 11",
+         "timeFromReturn": "18:15",
+         "timeToReturn": "20:05",
+         "timeTotal": "1h 55m",
+         "address": "Cảng hàng không quốc tế Nội Bài (sân bay Nội Bài) thuộc huyện Sóc Sơn, thành phố Hà Nội",
+         "price": "200$"
+      }
+   ],
+   "hotels": []
 }

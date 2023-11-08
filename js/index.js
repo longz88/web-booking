@@ -19,7 +19,6 @@ nextBtn.addEventListener('click', function () {
       active = active + 1;
    }
 
-   // active = active + 1;
    reloadSlider();
 });
 
@@ -33,9 +32,9 @@ prevBtn.addEventListener('click', function () {
    reloadSlider();
 });
 
-// let refreshSlider = setInterval(() => {
-//    nextBtn.click();
-// }, 5000);
+let refreshSlider = setInterval(() => {
+   nextBtn.click();
+}, 5000);
 
 function reloadSlider() {
    const lengthLeft = cards[active].offsetLeft - 10;
@@ -44,10 +43,10 @@ function reloadSlider() {
    const lastDotsActive = $('.container__review--dots li.active');
    lastDotsActive.classList.remove('active');
    dots[active].classList.add('active');
-   // clearInterval(refreshSlider);
-   // refreshSlider = setInterval(() => {
-   //    nextBtn.click();
-   // }, 5000);
+   clearInterval(refreshSlider);
+   refreshSlider = setInterval(() => {
+      nextBtn.click();
+   }, 5000);
 }
 
 dots.forEach((li, index) => {
@@ -86,3 +85,21 @@ vehicleItems.forEach((item, index) => {
       headerShowBtn.classList.add('active');
    });
 });
+
+// ======== btn scroll top========
+const btnScrollTop = $('.up-to-top');
+const height = window.scrollY;
+
+window.addEventListener('scroll', () => {
+   if (window.scrollY > 600) {
+      btnScrollTop.classList.add('active');
+   } else {
+      btnScrollTop.classList.remove('active');
+   }
+});
+
+btnScrollTop.addEventListener('click', () => {
+   window.scrollTo(0, 0);
+});
+
+// ================ API ==============

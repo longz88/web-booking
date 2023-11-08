@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Web-booking</title>
+      <link
+         rel="shortcut icon"
+         type="image/png"
+         href="/font/logo-web-2-removebg-preview.png"
+      />
+
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700;800&display=swap"
+         rel="stylesheet"
+      />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      />
+
+      <link rel="stylesheet" href="/css/flight-flow__css/flight.css" />
+      <link rel="stylesheet" href="/css/default.css" />
+   </head>
+   <body>
+      <div class="app">
+         <header>
+            <div class="header__logo">
+               <a href="/">
+                  <img
+                     class="header__logo--img"
+                     src="/font/logo-main-5-removebg-preview.png"
+                     alt="logo"
+                  />
+               </a>
+            </div>
+
+            <div class="header__menu">
+               <div class="header__find">
+                  <a
+                     href="/pages/flight-flow/flight.html"
+                     class="header__find--item"
+                  >
+                     <i class="fa-solid fa-plane"></i>
+                     <p>Chuyến bay</p>
+                  </a>
+                  <a
+                     href="/pages/hotel-flow/hotel.html"
+                     class="header__find--item"
+                  >
+                     <i class="fa-solid fa-bed"></i>
+                     <p>Khách sạn</p>
+                  </a>
+               </div>
+
+               <div class="header__register--wrapper show">
+                  <div class="header__register">
+                     <a
+                        href="/pages/Register-login/login.html"
+                        class="header__login"
+                        >Đăng nhập</a
+                     >
+                     <a
+                        href="/pages/Register-login/signUp.html"
+                        class="header__sign-up zoom"
+                        >Đăng ký</a
+                     >
+                  </div>
+               </div>
+
+               <div class="header__user--wrapper">
+                  <div class="header__user">
+                     <a href="#" class="header__favorite">
+                        <i class="fa-solid fa-heart"></i>
+                        <p>Yêu thích</p>
+                     </a>
+
+                     <div class="header__user--container">
+                        <div class="header__avatar">
+                           <img
+                              src="https://vapa.vn/wp-content/uploads/2022/12/anh-den-ngau.jpeg"
+                              alt=""
+                           />
+                           <div class="header__avatar--name">
+                              John danati jus
+                           </div>
+                        </div>
+
+                        <div class="header__user--title">
+                           <div class="header__user--title-list">
+                              <div class="header__user--acc">
+                                 <a
+                                    href="/pages/user/user.html"
+                                    class="header__user--title-item zoom"
+                                 >
+                                    <i class="fa-solid fa-user"></i>
+                                    <p>Tài khoản</p>
+                                    <i class="fa-solid fa-angle-right"></i>
+                                 </a>
+
+                                 <a
+                                    href="#"
+                                    class="header__user--title-item zoom"
+                                 >
+                                    <i class="fa-solid fa-gear"></i>
+                                    <p>Cài đặt</p>
+                                    <i class="fa-solid fa-angle-right"></i>
+                                 </a>
+                              </div>
+
+                              <div class="header__user--logout">
+                                 <a
+                                    href="#"
+                                    class="header__user--title-item zoom"
+                                 >
+                                    <i class="fa-solid fa-circle-question"></i>
+                                    <p>Trợ giúp</p>
+                                    <i class="fa-solid fa-angle-right"></i>
+                                 </a>
+
+                                 <a
+                                    href="#"
+                                    class="header__user--title-item zoom header__user--title-logout"
+                                 >
+                                    <i
+                                       class="fa-solid fa-right-from-bracket"
+                                    ></i>
+                                    <p>Đăng xuất</p>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="toggle-menu">
+               <i class="fa-solid fa-bars"></i>
+            </div>
+         </header>
+
+         <div class="container">
+            <form class="container__header--forms-flight">
+               <div class="container__header--form">
+                  <label for="form-to">Từ - Đến</label>
+                  <select
+                     name="from-to"
+                     id="form-to"
+                     class="container__header--form-item"
+                  >
+                     <option>Hà Nội - Tp Hồ Chí Minh</option>
+                     <option>Đà Nẵng - Đà lạt</option>
+                     <option>Hà Nội - Đà Nẵng</option>
+                     <option>Tp Hồ Chí Minh - Đà Lạt</option>
+                  </select>
+               </div>
+
+               <div class="container__header--form">
+                  <label for="trip">Chuyến</label>
+                  <select
+                     name="trip"
+                     id="trip"
+                     class="container__header--form-item"
+                  >
+                     <option value="Return">Đi</option>
+                     <option value="Return">Trở lại</option>
+                  </select>
+               </div>
+
+               <div class="container__header--form">
+                  <label for="depart-return">Khởi hành - Trở về</label>
+                  <input
+                     type="text"
+                     id="depart-return"
+                     placeholder="07 Nov 22 - 13 Nov 22"
+                     class="container__header--form-item"
+                  />
+               </div>
+
+               <div class="container__header--form">
+                  <label for="passenger">Hành khách - Hạng</label>
+                  <input
+                     type="text"
+                     id="passenger"
+                     placeholder="1 hành khách, Phổ thông"
+                     class="container__header--form-item"
+                  />
+               </div>
+
+               <button class="container__header--form-search">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+               </button>
+            </form>
+
+            <div class="container__content">
+               <div class="filter">
+                  <h1 class="filter__header">Bộ lọc</h1>
+                  <div class="filter__price">
+                     <div class="filter__heading">
+                        <h3>Giá</h3>
+                        <i class="fa-solid fa-chevron-up"></i>
+                        <!-- <i class="fa-solid fa-chevron-down"></i> -->
+                     </div>
+
+                     <div class="group">
+                        <div class="progress"></div>
+
+                        <div class="range-input">
+                           <input
+                              type="range"
+                              class="range-min"
+                              min="0"
+                              max="1200"
+                              step="100"
+                              value="0"
+                           />
+
+                           <input
+                              type="range"
+                              class="range-max"
+                              min="0"
+                              max="1200"
+                              step="100"
+                              value="1200"
+                           />
+                        </div>
+
+                        <div class="range-text">
+                           <div class="text-min">0$</div>
+                           <div class="text-max">1200$</div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="filter__time">
+                     <div class="filter__heading">
+                        <h3>Giờ khởi hành</h3>
+                        <i class="fa-solid fa-chevron-up"></i>
+                     </div>
+
+                     <div class="group">
+                        <div class="progress"></div>
+
+                        <div class="range-input">
+                           <input
+                              type="range"
+                              class="range-min"
+                              min="0"
+                              max="24"
+                              step="4"
+                              value="0"
+                           />
+
+                           <input
+                              type="range"
+                              class="range-max"
+                              min="0"
+                              max="24"
+                              step="4"
+                              value="24"
+                           />
+                        </div>
+
+                        <div class="range-text">
+                           <div class="text-min">0:00</div>
+                           <div class="text-max">24:00</div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="filter__rating">
+                     <div class="filter__heading">
+                        <h3>Đánh Giá</h3>
+                        <i class="fa-solid fa-chevron-up"></i>
+                     </div>
+
+                     <div class="filter__rating--list">
+                        <div class="filter__rating--item btn-see">0+</div>
+                        <div class="filter__rating--item btn-see">1+</div>
+                        <div class="filter__rating--item btn-see">2+</div>
+                        <div class="filter__rating--item btn-see">3+</div>
+                        <div class="filter__rating--item btn-see">4+</div>
+                     </div>
+                  </div>
+
+                  <div class="filter__airlines">
+                     <div class="filter__heading">
+                        <h3>Hãng hàng không</h3>
+                        <i class="fa-solid fa-chevron-up"></i>
+                     </div>
+
+                     <div class="filter__airlines--list">
+                        <div class="filter__airlines--item">
+                           <input
+                              type="checkbox"
+                              class="filter__airlines--check-box"
+                           />
+                           <p>Vietnam Airlines</p>
+                        </div>
+
+                        <div class="filter__airlines--item">
+                           <input
+                              type="checkbox"
+                              class="filter__airlines--check-box"
+                           />
+                           <p>Jetstar Pacific</p>
+                        </div>
+
+                        <div class="filter__airlines--item">
+                           <input
+                              type="checkbox"
+                              class="filter__airlines--check-box"
+                           />
+                           <p>VietJet Air</p>
+                        </div>
+
+                        <div class="filter__airlines--item">
+                           <input
+                              type="checkbox"
+                              class="filter__airlines--check-box"
+                           />
+                           <p>Bamboo Airways</p>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="filter__trips">
+                     <div class="filter__heading">
+                        <h3>Chuyến</h3>
+                        <i class="fa-solid fa-chevron-up"></i>
+                     </div>
+
+                     <div class="filter__trips--list">
+                        <div class="filter__trips--item">
+                           <input
+                              type="checkbox"
+                              class="filter__trips--check-box"
+                           />
+                           <p>Khứ hồi</p>
+                        </div>
+
+                        <div class="filter__trips--item">
+                           <input
+                              type="checkbox"
+                              class="filter__trips--check-box"
+                           />
+                           <p>Đa thành phố</p>
+                        </div>
+
+                        <div class="filter__trips--item">
+                           <input
+                              type="checkbox"
+                              class="filter__trips--check-box"
+                           />
+                           <p>Ngày linh hoạt</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="details">
+                  <div class="details__header--list">
+                     <div class="details__header--item active">
+                        <h3 class="details__header--heading">Ưu đãi nhất</h3>
+                        <div class="details__header--price-time">
+                           $99 . 1h 10m
+                        </div>
+                     </div>
+
+                     <div class="details__header--item">
+                        <h3 class="details__header--heading">Tốt nhất</h3>
+                        <div class="details__header--price-time">
+                           $99 . 1h 30m
+                        </div>
+                     </div>
+
+                     <div class="details__header--item">
+                        <h3 class="details__header--heading">Nhanh nhất</h3>
+                        <div class="details__header--price-time">
+                           $99 . 1h 20m
+                        </div>
+                     </div>
+
+                     <div class="details__header--item">
+                        <i class="fa-solid fa-bars"></i>
+                        <div class="details__header--item-other">Loại khác</div>
+                     </div>
+                  </div>
+
+                  <div class="details__container">
+                     <div class="details__container--header">
+                        <div class="details__container--heading">
+                           Hiển thị 4 trong
+                           <span>257 chuyến</span>
+                        </div>
+                        <div class="details__container--arrange">
+                           Sắp xếp theo
+                           <div class="details__container--arrange-list">
+                              Gợi ý <i class="fa-solid fa-angle-down"></i>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="details__container--list">
+                        <!-- <div class="details__container--item">
+                           <div class="details__container--company">
+                              <img
+                                 src="/font/vietjet-airlines-img.jpg"
+                                 alt=""
+                              />
+                           </div>
+
+                           <div class="details__container--content">
+                              <div class="details__container--rating">
+                                 <div
+                                    class="details__container--reating-star btn-see"
+                                 >
+                                    4.2
+                                 </div>
+                                 <div class="details__container--review">
+                                    <p
+                                       class="details__container--review-rating"
+                                    >
+                                       Very Good
+                                    </p>
+                                    <p
+                                       class="details__container--review-number"
+                                    >
+                                       54 đánh giá
+                                    </p>
+                                 </div>
+
+                                 <div class="details__container--price">
+                                    <p class="details__container--price-start">
+                                       Chỉ từ
+                                    </p>
+                                    <p class="details__container--price-money">
+                                       $104
+                                    </p>
+                                 </div>
+                              </div>
+
+                              <div class="details__container--item-title">
+                                 <div class="details__container--item-time">
+                                    <i class="fa-solid fa-clock"></i>
+
+                                    <div class="details__container--item-from">
+                                       <p>21:25 - 23:20</p>
+                                       <span>VietJet Air</span>
+                                    </div>
+
+                                    <p class="details__container--item-nonstop">
+                                       non stop
+                                    </p>
+
+                                    <div class="details__container--item-from">
+                                       <p>1h 55m</p>
+                                       <span>VJ-413</span>
+                                    </div>
+                                 </div>
+
+                                 <div class="details__container--item-time">
+                                    <i class="fa-solid fa-clock"></i>
+
+                                    <div class="details__container--item-from">
+                                       <p>18:15 - 20:05</p>
+                                       <span>VietJet Air</span>
+                                    </div>
+
+                                    <p class="details__container--item-nonstop">
+                                       non stop
+                                    </p>
+
+                                    <div class="details__container--item-from">
+                                       <p>1h 55m</p>
+                                       <span>VJ-413</span>
+                                    </div>
+                                 </div>
+                              </div>
+
+                              <div class="details__container--item-btn">
+                                 <div
+                                    class="details__container--item-btn-favorite btn-see"
+                                 >
+                                    <i class="fa-regular fa-heart"></i>
+                                 </div>
+
+                                 <a
+                                    href="./flight-detail.html"
+                                    class="details__container--item-view btn-show"
+                                    >Đặt vé</a
+                                 >
+                              </div>
+                           </div>
+                        </div> -->
+                     </div>
+
+                     <button class="details__container--btn">
+                        Hiển thị nhiều hơn
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <footer>
+            <div class="footer__header">
+               <div class="footer__header--content">
+                  <h1 class="footer__header--heading">
+                     Đăng kí để nhận thông báo mới
+                  </h1>
+                  <p class="footer__header--title">Chuyến du lịch</p>
+                  <p class="footer__header--desc">
+                     Lấy cảm hứng! Nhận giảm giá du lịch, mẹo và những câu
+                     chuyện hậu trường.
+                  </p>
+
+                  <form class="footer__form">
+                     <input
+                        type="email"
+                        placeholder="Địa chỉ email của bạn"
+                        class="footer__header--input"
+                     />
+                     <button class="footer__header--subscribe">Đăng kí</button>
+                  </form>
+               </div>
+
+               <img
+                  class="footer__header--vector"
+                  src="/font/vector-mailbox-footer.svg"
+                  alt=""
+               />
+            </div>
+
+            <div class="footer__bottom">
+               <div class="footer__bottom--left">
+                  <div class="footer__bottom--logo">
+                     <img
+                        src="/font/logo-footer-2-removebg-preview.png"
+                        alt=""
+                     />
+                  </div>
+                  <div class="footer__bottom--socials">
+                     <i class="fa-brands fa-facebook"></i>
+                     <i class="fa-brands fa-twitter"></i>
+                     <i class="fa-brands fa-youtube"></i>
+                     <i class="fa-brands fa-instagram"></i>
+                  </div>
+               </div>
+
+               <div class="footer__bottom--right">
+                  <div class="footer__bottom--item">
+                     <ul>
+                        <p class="footer__bottom--heading">Điểm đến</p>
+                        <li>Hà Nội</li>
+                        <li>Sài Gòn</li>
+                        <li>Phú Quốc</li>
+                        <li>Nha Trang</li>
+                     </ul>
+                  </div>
+
+                  <div class="footer__bottom--item">
+                     <ul>
+                        <p class="footer__bottom--heading">Dịch vụ</p>
+                        <li>Du ngoạn</li>
+                        <li>Chèo thuyền</li>
+                        <li>Bơi lội</li>
+                        <li>Đa hoạt động</li>
+                     </ul>
+                  </div>
+
+                  <div class="footer__bottom--item">
+                     <ul>
+                        <p class="footer__bottom--heading">Các sản phẩm</p>
+                        <li>Chuyến bay</li>
+                        <li>Khách sạn</li>
+                        <li>Thuê ô tô</li>
+                        <li>Biệt thự</li>
+                     </ul>
+                  </div>
+
+                  <div class="footer__bottom--item">
+                     <ul>
+                        <p class="footer__bottom--heading">Giới thiệu</p>
+                        <li>Về chúng tôi</li>
+                        <li>Cách đặt chỗ</li>
+                     </ul>
+                  </div>
+
+                  <div class="footer__bottom--item">
+                     <ul>
+                        <p class="footer__bottom--heading">Liên hệ</p>
+                        <li>Về chúng tôi</li>
+                        <li>Cách đặt chỗ</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </footer>
+      </div>
+
+      <script src="/js/default.js"></script>
+      <script src="/js/flight-flow__js/flight.js"></script>
+   </body>
+</html>

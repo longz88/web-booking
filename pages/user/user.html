@@ -34,27 +34,101 @@
 
             <div class="header__menu">
                <div class="header__find">
-                  <a href="#" class="header__find--item">
+                  <a
+                     href="/pages/flight-flow/flight.html"
+                     class="header__find--item"
+                  >
                      <i class="fa-solid fa-plane"></i>
                      <p>Find Flight</p>
                   </a>
-                  <a href="#" class="header__find--item">
+                  <a
+                     href="/pages/hotel-flow/hotel.html"
+                     class="header__find--item"
+                  >
                      <i class="fa-solid fa-bed"></i>
                      <p>Find Stays</p>
                   </a>
                </div>
 
-               <div class="header__register">
-                  <a
-                     href="/pages/Register-login/login.html"
-                     class="header__login"
-                     >Login</a
-                  >
-                  <a
-                     href="/pages/Register-login/signUp.html"
-                     class="header__sign-up zoom"
-                     >Sign Up</a
-                  >
+               <div class="header__register--wrapper show">
+                  <div class="header__register">
+                     <a
+                        href="/pages/Register-login/login.html"
+                        class="header__login"
+                        >Login</a
+                     >
+                     <a
+                        href="/pages/Register-login/signUp.html"
+                        class="header__sign-up zoom"
+                        >Sign Up</a
+                     >
+                  </div>
+               </div>
+
+               <div class="header__user--wrapper">
+                  <div class="header__user">
+                     <a href="#" class="header__favorite">
+                        <i class="fa-solid fa-heart"></i>
+                        <p>Favorite</p>
+                     </a>
+
+                     <div class="header__user--container">
+                        <div class="header__avatar">
+                           <img
+                              src="https://vapa.vn/wp-content/uploads/2022/12/anh-den-ngau.jpeg"
+                              alt=""
+                           />
+                           <div class="header__avatar--name">
+                              John danati jus
+                           </div>
+                        </div>
+
+                        <div class="header__user--title">
+                           <div class="header__user--title-list">
+                              <div class="header__user--acc">
+                                 <a
+                                    href="/pages/user/user.html"
+                                    class="header__user--title-item zoom"
+                                 >
+                                    <i class="fa-solid fa-user"></i>
+                                    <p>My Account</p>
+                                    <i class="fa-solid fa-angle-right"></i>
+                                 </a>
+
+                                 <a
+                                    href="#"
+                                    class="header__user--title-item zoom"
+                                 >
+                                    <i class="fa-solid fa-gear"></i>
+                                    <p>Settings</p>
+                                    <i class="fa-solid fa-angle-right"></i>
+                                 </a>
+                              </div>
+
+                              <div class="header__user--logout">
+                                 <a
+                                    href="#"
+                                    class="header__user--title-item zoom"
+                                 >
+                                    <i class="fa-solid fa-circle-question"></i>
+                                    <p>Support</p>
+                                    <i class="fa-solid fa-angle-right"></i>
+                                 </a>
+
+                                 <a
+                                    href="#"
+                                    class="header__user--title-item zoom header__user--title-logout"
+                                 >
+                                    <i
+                                       class="fa-solid fa-right-from-bracket"
+                                    ></i>
+                                    <p>Logout</p>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
                </div>
             </div>
 
@@ -120,7 +194,9 @@
                   <div class="option__account--item">
                      <div class="option__account--item-left">
                         <p class="option__account--item-heading">Name</p>
-                        <div class="option__account--title">John Doe</div>
+                        <div class="option__account--title user-name">
+                           John Doe
+                        </div>
                      </div>
 
                      <div class="option__account--item-right">
@@ -134,17 +210,12 @@
                   <div class="option__account--item">
                      <div class="option__account--item-left">
                         <p class="option__account--item-heading">Email</p>
-                        <div class="option__account--title">
+                        <div class="option__account--title user-email">
                            john.doe@gmail.com
                         </div>
                      </div>
 
                      <div class="option__account--item-right">
-                        <button class="option__account--item-btn btn-see">
-                           <i class="fa-solid fa-circle-plus"></i>
-                           <p>Add another email</p>
-                        </button>
-
                         <button class="option__account--item-btn btn-see">
                            <i class="fa-solid fa-pen-to-square"></i>
                            <p>Change</p>
@@ -155,7 +226,9 @@
                   <div class="option__account--item">
                      <div class="option__account--item-left">
                         <p class="option__account--item-heading">Password</p>
-                        <div class="option__account--title">*********</div>
+                        <div class="option__account--title user-password">
+                           *********
+                        </div>
                      </div>
 
                      <div class="option__account--item-right">
@@ -171,7 +244,7 @@
                         <p class="option__account--item-heading">
                            Phone number
                         </p>
-                        <div class="option__account--title">
+                        <div class="option__account--title user-phoneNumber">
                            +1 000-000-0000
                         </div>
                      </div>
@@ -187,8 +260,8 @@
                   <div class="option__account--item">
                      <div class="option__account--item-left">
                         <p class="option__account--item-heading">Address</p>
-                        <div class="option__account--title">
-                           St 32 main downtown, Los Angeles, California, USA
+                        <div class="option__account--title user-address">
+                           ...
                         </div>
                      </div>
 
@@ -205,7 +278,7 @@
                         <p class="option__account--item-heading">
                            Date of birth
                         </p>
-                        <div class="option__account--title">01-01-1992</div>
+                        <div class="option__account--title user-birth">...</div>
                      </div>
 
                      <div class="option__account--item-right">
@@ -320,9 +393,12 @@
                            Download Ticket
                         </button>
 
-                        <button class="option__tickets--item-btn btn-see">
+                        <a
+                           href="/pages/flight-flow/flight-sticket.html"
+                           class="option__tickets--item-btn btn-see"
+                        >
                            <i class="fa-solid fa-chevron-right"></i>
-                        </button>
+                        </a>
                      </div>
                   </div>
 
@@ -402,9 +478,12 @@
                            Download Ticket
                         </button>
 
-                        <button class="option__tickets--item-btn btn-see">
+                        <a
+                           href="/pages/flight-flow/flight-sticket.html"
+                           class="option__tickets--item-btn btn-see"
+                        >
                            <i class="fa-solid fa-chevron-right"></i>
-                        </button>
+                        </a>
                      </div>
                   </div>
 
@@ -484,9 +563,12 @@
                            Download Ticket
                         </button>
 
-                        <button class="option__tickets--item-btn btn-see">
+                        <a
+                           href="/pages/flight-flow/flight-sticket.html"
+                           class="option__tickets--item-btn btn-see"
+                        >
                            <i class="fa-solid fa-chevron-right"></i>
-                        </button>
+                        </a>
                      </div>
                   </div>
                </div>
@@ -562,9 +644,12 @@
                            Download Ticket
                         </button>
 
-                        <button class="option__tickets--item-btn btn-see">
+                        <a
+                           href="/pages/hotel-flow/hotel-sticket.html"
+                           class="option__tickets--item-btn btn-see"
+                        >
                            <i class="fa-solid fa-chevron-right"></i>
-                        </button>
+                        </a>
                      </div>
                   </div>
 
@@ -638,9 +723,12 @@
                            Download Ticket
                         </button>
 
-                        <button class="option__tickets--item-btn btn-see">
+                        <a
+                           href="/pages/hotel-flow/hotel-sticket.html"
+                           class="option__tickets--item-btn btn-see"
+                        >
                            <i class="fa-solid fa-chevron-right"></i>
-                        </button>
+                        </a>
                      </div>
                   </div>
 
@@ -714,9 +802,12 @@
                            Download Ticket
                         </button>
 
-                        <button class="option__tickets--item-btn btn-see">
+                        <a
+                           href="/pages/hotel-flow/hotel-sticket.html"
+                           class="option__tickets--item-btn btn-see"
+                        >
                            <i class="fa-solid fa-chevron-right"></i>
-                        </button>
+                        </a>
                      </div>
                   </div>
                </div>
@@ -862,6 +953,7 @@
          </footer>
       </div>
 
+      <script src="/js/default.js"></script>
       <script type="text/javascript" src="/js/user__js/user.js"></script>
    </body>
 </html>

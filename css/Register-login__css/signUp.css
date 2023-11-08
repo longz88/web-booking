@@ -72,6 +72,7 @@ li {
    align-items: center;
    gap: 4px;
    font-size: 14px;
+   cursor: pointer;
 }
 
 .header img {
@@ -187,17 +188,19 @@ input[type='number'] {
    font-size: 14px;
    font-weight: 600;
    border-radius: 4px;
+   padding: 16px 0;
    transition: 0.25s linear;
    display: flex;
    justify-content: center;
    width: 100%;
    opacity: 0.5;
-   padding: 16px 0;
-   cursor: pointer;
+   pointer-events: none;
 }
 
 .btn-signUp.active {
    opacity: 1;
+   pointer-events: auto;
+   cursor: pointer;
 }
 
 .btn-signUp.active:hover.zoom {

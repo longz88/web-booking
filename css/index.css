@@ -32,7 +32,7 @@ li {
    --black-color-opacity: rgba(17, 34, 17, 0.2);
    --white-color: #fff;
    --mint-green: #8dd3bb;
-   --mint-green-hover: #4bad8b;
+   --mint-green-hover: #43ca9b;
    --light-green: #cdeae1;
 
    --header-height: 90px;
@@ -40,6 +40,19 @@ li {
 }
 
 /* ==== header ========= */
+::-webkit-scrollbar {
+   width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+   box-shadow: inset 0 0 5px rgba(17, 34, 17, 0.2);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+   background: var(--mint-green);
+}
 
 .app {
    position: relative;
@@ -125,6 +138,36 @@ header {
 :hover.zoom {
    transform: scale(1.04);
    transition: all 0.25s linear;
+}
+
+/* ====== icon up to top========== */
+.up-to-top {
+   position: fixed;
+   z-index: 10;
+   bottom: 64px;
+   right: 64px;
+   width: 52px;
+   height: 52px;
+   background-color: var(--mint-green);
+   display: grid;
+   place-items: center;
+   border-radius: 50%;
+   /* box-shadow: 0px 4px 16px 0px rgba(17, 34, 17, 0.05); */
+   cursor: pointer;
+   border: 4px solid var(--white-color);
+   display: none;
+}
+
+.up-to-top.active {
+   transition: 1s linear;
+   display: block;
+}
+
+.up-to-top-icon {
+   display: grid;
+   height: 100%;
+   place-items: center;
+   margin-left: 1px;
 }
 
 /* ===== footer ===== */
@@ -297,7 +340,7 @@ footer::after {
    text-align: center;
    margin: 54px 0 120px;
    color: var(--white-color);
-   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9);
+   text-shadow: 4px 8px 12px rgba(0, 0, 0, 1);
 }
 
 .container__header--content-top {
@@ -339,7 +382,7 @@ footer::after {
    height: 48px;
    background-color: var(--black-color-opacity);
    top: 0;
-   left: 100px;
+   left: calc(116px + 32px);
 }
 
 .container__header--vehicle-item {
@@ -350,6 +393,7 @@ footer::after {
    opacity: 0.6;
    cursor: pointer;
    padding-bottom: 12px;
+   border-bottom: 4px solid transparent;
 }
 
 .container__header--vehicle-item.active {
@@ -378,7 +422,9 @@ footer::after {
    gap: 24px;
    margin: 48px 0 32px;
 }
+/* =============================== */
 
+/* =============================== */
 .container__header--form {
    position: relative;
    padding: 16px;
@@ -437,6 +483,10 @@ footer::after {
    display: none;
 }
 
+.container__header--submit-btn:hover {
+   background-color: var(--mint-green-hover);
+}
+
 .container__header--submit-btn.active {
    display: block;
 }
@@ -490,6 +540,7 @@ footer::after {
 .container__plan--img {
    width: 90px;
    height: 90px;
+   border-radius: 8px;
    object-fit: cover;
 }
 
@@ -548,6 +599,11 @@ footer::after {
 
 .btn__option-flight {
    margin: 0 auto 28px;
+   display: inline-flex;
+}
+
+.btn__option-flight:hover {
+   background-color: var(--mint-green-hover);
 }
 
 /* ==== container review ===== */
